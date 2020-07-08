@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG GERAN_FREQ_GRP" macro_code="3000" macro_name="Change GERAN Frequency Group" command_group="7"
+            para_num="11" must_give="1 2" maindisplay="1 2 3 4 5 6 7 8 9 10">
+
+        <para index="1" name="CellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index='2' name='BCCHARFCN' description='BCCHARFCN' type='number'>
+            <range min='0' max='1023'/>
+        </para>
+
+        <para index='3' name='X_VENDOR_P_MAX_GERAN' description='X_VENDOR_P_MAX_GERAN' type='number'>
+            <range min='0' max='39'/>
+        </para>
+
+        <para index='4' name='X_VENDOR_NCC_PERMITTED' description='X_VENDOR_NCC_PERMITTED' type='number'>
+            <range min='0' max='255'/>
+        </para>
+
+        <para index='5' name='QRxLevMin' description='QRxLevMin' type='number'>
+            <range min='0' max='45'/>
+        </para>
+
+        <para index='6' name='CellReselectionPriority' description='Cell Reselection Priority' type='list'>
+            <list name="0" value="0"/>
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="3" value="3"/>
+            <list name="4" value="4"/>
+            <list name="5" value="5"/>
+            <list name="6" value="6"/>
+            <list name="7" value="7"/>
+        </para>
+
+        <para index='7' name='ThreshXHigh' description='ThreshXHigh' type='number'>
+            <range min='0' max='31'/>
+        </para>
+        <para index='8' name='ThreshXLow' description='ThreshXLow' type='number'>
+            <range min='0' max='31'/>
+        </para>
+        <para index='9' name='X_VENDOR_OFFSET_FREQ' description='X_VENDOR_OFFSET_FREQ' type='number'>
+            <range min='-15' max='15'/>
+        </para>
+
+        <para index='10' name='FollowingARFCNs' type='list' description='FollowingARFCNs'>
+
+            <list name="ExplicitListOfARFCNs" value="ExplicitListOfARFCNs"/>
+            <list name="QquallySpacedARFCNs" value="QquallySpacedARFCNs"/>
+            <list name="VariableBitMapOfARFCNs" value="VariableBitMapOfARFCNs"/>
+
+            <child_select>
+                <value min="ExplicitListOfARFCNs" max="ExplicitListOfARFCNs"/>
+                <open index="11" must_give=""/>
+            </child_select>
+
+            <child_select>
+                <value min="QquallySpacedARFCNs" max="QquallySpacedARFCNs"/>
+                <open index="12 13" must_give=""/>
+            </child_select>
+
+            <child_select>
+                <value min="VariableBitMapOfARFCNs" max="VariableBitMapOfARFCNs"/>
+                <open index="14" must_give=""/>
+            </child_select>
+
+        </para>
+
+        <para index='11' name='X_VENDOR_EXPLICIT_ARFCN_LIST' description='X_VENDOR_EXPLICIT_ARFCN_LIST' type="text"
+                minlength="1" maxlength="31">
+
+        </para>
+
+        <para index='12' name='X_VENDOR_ARFCN_SPACING' description='X_VENDOR_ARFCN_SPACING' type='list'>
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="3" value="3"/>
+            <list name="4" value="4"/>
+            <list name="5" value="5"/>
+            <list name="6" value="6"/>
+            <list name="7" value="7"/>
+            <list name="8" value="8"/>
+
+        </para>
+        <para index='13' name='X_VENDOR_NUM_OF_FOLLOWING_ARFCNS' description='X_VENDOR_NUM_OF_FOLLOWING_ARFCNS'
+                type='number'>
+            <range min='0' max='31'/>
+        </para>
+
+        <para index='14' name='X_VENDOR_ARFCN_BITMAP' description='X_VENDOR_ARFCN_BITMAP' type="text" minlength="1"
+                maxlength="31">
+
+        </para>
+
+    </command>
+</macro>

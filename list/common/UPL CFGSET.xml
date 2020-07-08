@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="UPL CFGSET" macro_code="3003" macro_name="Upload Configuration Dataset" command_group="7"
+            para_num="5" maindisplay="1 3 4 5 6" must_give="1 3 4 5 6">
+
+        <para index='1' name='Option' type='list' description='Option'>
+            <list name="Current Configuration" value="0"/>
+            <list name="Backup Configuration" value="1"/>
+
+            <child_select>
+                <value min="1" max="1"/>
+                <open index="2" must_give=""/>
+            </child_select>
+
+        </para>
+
+        <para index="2" name="FileName" description="File Name" type="text" minlength="1" maxlength="128">
+        </para>
+        <para index="3" name="NeSftpIp" description="SFTP Server IP" type="text"
+                pattern="/^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/">
+        </para>
+        <para index="4" name="NeSftpUserName" description="SFTP username" type="text" minlength="1" maxlength="32">
+        </para>
+        <para index="5" name="NeSftpPwd" description="SFTP password" type="password" minlength="1" maxlength="32">
+        </para>
+        <para index="6" name="NeSftpDir" description="SFTP directory" type="text" minlength="1" maxlength="128">
+        </para>
+    </command>
+</macro>

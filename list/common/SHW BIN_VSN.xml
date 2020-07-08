@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW BIN_VSN" macro_code="3001" macro_name="Show Binary Version" command_group="7" para_num="0"
+            maindisplay="1"
+            must_give="1">
+
+        <para index="1" name="CardType" description="Card Type" type="list">
+            <list name="CTC" value="0" description="CTC"/>
+            <list name="BBC" value="1" description="BBC"/>
+
+            <child_select>
+                <value min="1" max="1"/>
+                <open index="2" must_give="2"/>
+            </child_select>
+
+        </para>
+        <para index="2" name="CardIndex" description="BBC Number" type="list">
+            <list name="BBC1" value="0" description="BBC1"/>
+            <list name="BBC2" value="1" description="BBC2"/>
+            <list name="BBC3" value="2" description="BBC3"/>
+        </para>
+
+    </command>
+</macro>
+

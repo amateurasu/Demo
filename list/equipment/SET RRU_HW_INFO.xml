@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SET RRU_HW_INFO" macro_code="3000" macro_name="Set RRU Hardware Info" command_group="7" para_num="8"
+            maindisplay="1 2 3 4 5 6" must_give="1 2 3 4 5 6">
+
+        <para index="1" name="RackNumber" description="Connected BBC Rack Number" type="list" default="0">
+            <list name='0' value='0'/>
+            <list name='1' value='1'/>
+            <list name='2' value='2'/>
+            <list name='3' value='3'/>
+        </para>
+        <para index="2" name="SubRackNumber" description="Connected BBC Subrack Number" type="list" default="0">
+            <list name='0' value='0'/>
+            <list name='1' value='1'/>
+            <list name='2' value='2'/>
+            <list name='3' value='3'/>
+        </para>
+        <para index="3" name="SlotNumber" description="Connected BBC" type="list" default="2">
+            <list name='BBC1' value='2'/>
+            <list name='BBC2' value='3'/>
+            <list name='BBC3' value='4'/>
+        </para>
+        <para index="4" name="PortNumber" description="Connected CPRI Port Number" type="list" default="0">
+            <list name='0' value='0'/>
+            <list name='1' value='1'/>
+        </para>
+
+        <para index="5" name="hwTarget" description="Hardware Target" type="list">
+            <list name='System Id' value='id'/>
+            <list name='TRX Serial Number' value='TRX'/>
+            <list name='Duplexer Serial Number' value='DUPLEXER'/>
+            <list name='PA Serial Number' value='PA'/>
+            <list name='System Serial Number' value='RRU'/>
+            <list name='Date' value='date'/>
+            <list name='The Number of Ports' value='ports'/>
+            <list name='MAC address for port 0' value='0'/>
+            <list name='MAC address for port 1' value='1'/>
+            <list name='MAC address for port 2' value='2'/>
+            <list name='MAC address for port 3' value='3'/>
+        </para>
+        <para index="6" name="targetInfo" description="Target Info" type="text" minlength="1" maxlength="64">
+        </para>
+    </command>
+</macro>

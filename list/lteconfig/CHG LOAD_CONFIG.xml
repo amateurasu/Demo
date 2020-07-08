@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG LOAD_CONFIG" macro_code="3000" macro_name="Change Load Report Config" command_group="7"
+            para_num="9" maindisplay="1 2 3 4 5 6 7 8 9 10" must_give="1 2">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="loadlevel" parentAdd='1' description="Load Level" type="list">
+            <list name="OverLoad" value="over_load" description="OverLoad"/>
+            <list name="HighLoad" value="high_load" description="HighLoad"/>
+            <list name="MidLoad" value="mid_load" description="MidLoad"/>
+        </para>
+        <para index="3" name="load_percentage" description="Load Percentage" type="number">
+            <range min="1" max="100"/>
+        </para>
+
+        <para index="4" name="action" description="Action" type="number">
+            <range min="0" max="4294967295"/>
+        </para>
+
+        <para index="5" name="num_users" description="Number of Users" type="number">
+            <range min="1" max="255"/>
+        </para>
+        <para index="6" name="q_watermark_high" description="Q Watermark High" type="number">
+            <range min="1" max="100"/>
+        </para>
+        <para index="7" name="q_watermark_low" description="Q Watermark Low" type="number">
+            <range min="1" max="100"/>
+        </para>
+        <para index="8" name="redirect_meas_based_rwr" description="Redirect Measurement Based Rwr" type="number">
+            <range min="0" max="1"/>
+        </para>
+        <para index="9" name="redirect_meas_based_rwr_timer" description="Redirect Measurement Based Rwr Timer"
+                type="number">
+            <range min="5" max="120"/>
+        </para>
+        <para index="10" name="soft_limit" description="Soft Limit" type="number">
+            <range min="5" max="10"/>
+        </para>
+
+    </command>
+</macro>

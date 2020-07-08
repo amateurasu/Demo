@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="ADD GERAN_NR_CELL" macro_code="3000" macro_name="Add Neighboring GERAN Cell" command_group="7"
+            para_num="17" must_give="1" maindisplay="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17">
+
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1" default='0'>
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index='2' name='PLMNID' description='PLMNID' type='number'>
+            <range min='0' max='999999'/>
+        </para>
+
+        <para index='3' name='LAC' description='LAC' type='number'>
+            <range min='0' max='65535'/>
+        </para>
+
+        <para index='4' name='CI' description='CI' type='number'>
+            <range min='0' max='65535'/>
+        </para>
+        <para index='5' name='BandIndicator' description='BandIndicator' type='list'>
+            <list name='DCS1800' value='DCS1800'/>
+            <list name='PCS1900' value='PCS1900'/>
+        </para>
+        <para index='6' name='BCCHARFCN' description='BCCHARFCN' type='number'>
+            <range min='0' max='1023'/>
+        </para>
+        <para index='7' name='BSIC' description='BSIC' type='number'>
+            <range min='0' max='255'/>
+        </para>
+        <para index='8' name='X_VENDOR_NR_STATUS' description='NR Status' type='list'>
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="255" value="255"/>
+        </para>
+        <para index='9' name='X_VENDOR_HO_STATUS' description='HO Status' type='list'>
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="255" value="255"/>
+        </para>
+        <para index='10' name='X_VENDOR_RAC' description='RAC' type='number'>
+            <range min='0' max='255'/>
+        </para>
+        <para index='11' name='X_VENDOR_CELL_SPECIFIC_OFFSET' description='Cell Specific Offset' type='number'>
+            <range min='-15' max='15'/>
+        </para>
+        <para index='12' name='X_VENDOR_RSSI' description='RSSI' type='number'>
+            <range min='0' max='63'/>
+        </para>
+        <para index='13' name='X_VENDOR_DTM_SUPPORTED' description='DTM Supported' type='list'>
+            <list name="FALSE" value="0"/>
+            <list name="TRUE" value="1"/>
+        </para>
+        <para index='14' name='X_VENDOR_DTM_HO_SUPPORTED' description='DTM HO Supported' type='list'>
+            <list name="FALSE" value="0"/>
+            <list name="TRUE" value="1"/>
+        </para>
+        <para index='15' name='X_VENDOR_NETWORK_CONTROL_ORDER' description='Network Control Order' type='number'>
+            <range min='0' max='3'/>
+        </para>
+        <para index='16' name='X_VENDOR_VOIP_CAPABLE' description='VOIP Capable' type='list'>
+            <list name="FALSE" value="0"/>
+            <list name="TRUE" value="1"/>
+        </para>
+        <para index='17' name='X_VENDOR_DAHO_INDICATION' description='DAHO Indicator' type='list'>
+            <list name="FALSE" value="0"/>
+            <list name="TRUE" value="1"/>
+        </para>
+
+    </command>
+</macro>

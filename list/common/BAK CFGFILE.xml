@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="BAK CFGSET" macro_code="3000" macro_name="Backup Configuration Dataset " command_group="7"
+            para_num="5" maindisplay="1" must_give="1">
+
+        <para index="1" name="Desc" description="Description" type="text" minlength="1" maxlength="128">
+        </para>
+    </command>
+</macro>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG PHYPUSCH" macro_code="3000" macro_name="Change LTE RAN PHY PUSCH" command_group="7" para_num="6"
+            maindisplay="1 2 3 4 5 6" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="HoppingMode" description="Hopping Mode" type="list">
+            <list name="Inter Sub Frame" value="InterSubFrame"/>
+            <list name="Intra And Inter Sub Frame" value="IntraAndInterSubFrame"/>
+        </para>
+        <para index="3" name="HoppingOffset" description="Hopping Offset" type="number">
+            <range min="0" max="98"/>
+        </para>
+        <para index="4" name="NSB" description="NSB" type="number">
+            <range min="0" max="4"/>
+        </para>
+        <para index="5" name="PUSCHRecvSelection" description="PUSCH Receiver Selection" multi_value="1" type="list">
+            <list name="MRC" value="0"/>
+            <list name="IRC" value="1"/>
+            <list name="Adaptive" value="2"/>
+        </para>
+
+        <para index="6" name="Enable64QAM" description="Enable 64QAM Flag" type="list">
+            <list name="TRUE" value="0"/>
+            <list name="FALSE" value="1"/>
+        </para>
+
+    </command>
+</macro>

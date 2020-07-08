@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG PHYSICAL_IP" macro_code="3000" macro_name="Change Physical IP" command_group="7" para_num="0"
+            maindisplay="1 2" must_give="1 2">
+
+        <para index="1" name="interface" description="Interface Name" type="list">
+            <list name='FE1/GE1' value='fm1-mac3'/>
+            <list name='FE0/GE0/LMT' value='fm1-mac4'/>
+            <list name='SFP1' value='fm1-mac9'/>
+            <list name='SFP0' value='fm1-mac10'/>
+        </para>
+
+        <para index="2" name="ipMethod" description="Ip Method" type="list">
+            <list name='DHCP' value='0'/>
+            <list name='Static' value='1'/>
+
+            <child_select>
+                <value min="1" max="1"/>
+                <open index="3 4 5" must_give="3 4 5"/>
+            </child_select>
+        </para>
+
+        <para index="3" name="ipAddress" description="Physical interface IP address" type="ipaddress"
+                pattern="/^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/">
+
+        </para>
+
+        <para index="4" name="netmask" description="Ip Netmask" type="text"
+                pattern="/^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/">
+        </para>
+
+        <para index="5" name="option" description="Option" type="list">
+            <list name="Apply Now" value="0" description="Apply to current and startup IP"/>
+            <list name="Apply After Reboot" value="1" description="Apply to startup IP"/>
+            <list name="Temporary" value="2"
+                    description="Apply to current IP and restore with startup IP after rebooting"/>
+        </para>
+
+    </command>
+</macro>

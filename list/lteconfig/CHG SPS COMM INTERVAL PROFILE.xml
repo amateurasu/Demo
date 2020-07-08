@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG SPS COMM INTERVAL PROFILE" macro_code="3000" macro_name="Change SPS Common Interval Profile"
+            command_group="7" para_num="13" maindisplay="1 2 3 4 5 6 7 8 9 10 11 12 13" must_give="">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index='2' name='pid' description='Profile ID' type='list' parentAttr='1'>
+            <list name='1' value='1'/>
+            <list name='2' value='2'/>
+            <list name='3' value='3'/>
+            <list name='4' value='4'/>
+            <list name='5' value='5'/>
+            <list name='6' value='6'/>
+            <list name='7' value='7'/>
+            <list name='8' value='8'/>
+            <list name='9' value='9'/>
+            <list name='10' value='10'/>
+            <list name='11' value='11'/>
+            <list name='12' value='12'/>
+            <list name='13' value='13'/>
+            <list name='14' value='14'/>
+            <list name='15' value='15'/>
+            <list name='16' value='16'/>
+        </para>
+
+        <para index='3' name='overrideSpsOccassionForOtherUe' description='Override SPS Occassion For Other UE'
+                type='list'>
+            <list name='False' value='0'/>
+            <list name='True' value='1'/>
+        </para>
+        <para index='4' name='strictSpsResourceUsageForSpsLc' description='Strict SPS Resource Usage For SPS LC'
+                type='list'>
+            <list name='False' value='0'/>
+            <list name='True' value='1'/>
+        </para>
+        <para index='5' name='enableSegConcatSpsRlcSdu' description='Enable Seg Concat SPS RLC SDU' type='list'>
+            <list name='False' value='0'/>
+            <list name='True' value='1'/>
+        </para>
+        <para index='6' name='enableSilenceDetection' description='Enable Silence Detection' type='list'>
+            <list name='False' value='0'/>
+            <list name='True' value='1'/>
+        </para>
+        <para index='7' name='interPktDelayForSilenceDetection' description='Inter Pkt Delay For Silence Detection'
+                type='number'>
+            <range min='1' max='10'/>
+        </para>
+        <para index='8' name='minRbSavedReactivationThres' description='Min Rb Saved Reactivation Threshold'
+                type='number'>
+            <range min='0' max='10'/>
+        </para>
+        <para index='9' name='spsBlerThres' description='SPS Bler Threshold' type='number' default='10'>
+            <range min='1' max='30'/>
+        </para>
+        <para index='10' name='auditInterval' description='Audit Interval' type='number' default='5'>
+            <range min='0' max='20'/>
+        </para>
+        <para index='11' name='spsResAllocTtiAdv' description='SPS Res Alloc Tti Adv' type='number'>
+            <range min='1' max='5'/>
+        </para>
+        <para index='12' name='silencePdcpSduSizeIpv4' description='Silence Pdcp Sdu Size Ipv4' type='number'
+                default='47'>
+            <range min='0' max='4294967295'/>
+        </para>
+        <para index='13' name='silencePdcpSduSizeIpv6' description='Silence Pdcp Sdu Size Ipv6' type='number'
+                default='67'>
+            <range min='0' max='4294967295'/>
+        </para>
+    </command>
+</macro>

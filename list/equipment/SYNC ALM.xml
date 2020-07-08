@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SYNC ALM" macro_code="3000" macro_name="Sync Alarm" command_group="7" para_num="4"
+            maindisplay="1 2 3" must_give="1 2 3">
+        <para index='1' name='fromDate' type='text' minlength="1" maxlength="128" description='FromDate'>
+        </para>
+        <para index='2' name='toDate' type='text' minlength="1" maxlength="128" description='ToDate'>
+        </para>
+        <para index='3' name='interval' type='text' minlength="1" maxlength="128" description='Interval'>
+        </para>
+    </command>
+</macro>

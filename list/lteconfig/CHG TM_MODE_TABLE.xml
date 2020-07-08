@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG TM_MODE_TABLE" macro_code="3000" macro_name="Change MIMO Transmission Table Parameters"
+            command_group="7" para_num="6" must_give="1 2" maindisplay="1 2 3 4 5 6">
+
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index="2" name="TableIndex" parentAttr='1' description="Table Index" type="list">
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="3" value="3"/>
+            <list name="4" value="4"/>
+            <list name="5" value="5"/>
+            <list name="6" value="6"/>
+            <list name="7" value="7"/>
+            <list name="8" value="8"/>
+        </para>
+
+        <para index="3" name="sinr_level" description="SINR Level" type="list">
+            <list name="Low" value="0"/>
+            <list name="High" value="1"/>
+        </para>
+
+        <para index="4" name="pathloss_level" description="Pathloss Level" type="list">
+            <list name="Low" value="0"/>
+            <list name="High" value="1"/>
+        </para>
+
+        <para index="5" name="mobility_level" description="Mobility Level" type="list">
+            <list name="Low" value="0"/>
+            <list name="High" value="1"/>
+        </para>
+
+        <para index="6" name="tm_mode" description="Transmission Mode" type="list">
+            <list name="TM1" value="0"/>
+            <list name="TM2" value="1"/>
+            <list name="TM3" value="2"/>
+            <list name="TM4" value="3"/>
+            <list name="TM5" value="4"/>
+            <list name="TM6" value="5"/>
+            <list name="TM7" value="6"/>
+            <list name="TM8" value="7"/>
+        </para>
+
+    </command>
+</macro>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG CONNECTEDEUTRA" macro_code="3000" macro_name="Change LTE RAN Connected Mode EUTRA"
+            command_group="7" para_num="23" maindisplay="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23"
+            must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="FilterCoefficientRSRP" description="Filter Coefficient RSRP" type="list">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+            <list name="3" value="3" description="3"/>
+            <list name="4" value="4" description="4"/>
+            <list name="5" value="5" description="5"/>
+            <list name="6" value="6" description="6"/>
+            <list name="7" value="7" description="7"/>
+            <list name="8" value="8" description="8"/>
+            <list name="9" value="9" description="9"/>
+            <list name="11" value="11" description="11"/>
+            <list name="13" value="13" description="13"/>
+            <list name="15" value="15" description="15"/>
+            <list name="17" value="17" description="17"/>
+            <list name="19" value="19" description="19"/>
+        </para>
+        <para index="3" name="FilterCoefficientRSRQ" description="Filter Coefficient RSRQ" type="list">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+            <list name="3" value="3" description="3"/>
+            <list name="4" value="4" description="4"/>
+            <list name="5" value="5" description="5"/>
+            <list name="6" value="6" description="6"/>
+            <list name="7" value="7" description="7"/>
+            <list name="8" value="8" description="8"/>
+            <list name="9" value="9" description="9"/>
+            <list name="11" value="11" description="11"/>
+            <list name="13" value="13" description="13"/>
+            <list name="15" value="15" description="15"/>
+            <list name="17" value="17" description="17"/>
+            <list name="19" value="19" description="19"/>
+        </para>
+        <para index="4" name="A1ThresholdRSRP" description="A1 Threshold RSRP" type="number">
+            <range min="0" max="97"/>
+        </para>
+        <para index="5" name="A1ThresholdRSRQ" description="A1 Threshold RSRQ" type="number">
+            <range min="0" max="34"/>
+        </para>
+        <para index="6" name="A2ThresholdRSRP" description="A2 Threshold RSRP" type="number">
+            <range min="0" max="97"/>
+        </para>
+        <para index="7" name="A2ThresholdRSRQ" description="A2 Threshold RSRQ" type="number">
+            <range min="0" max="34"/>
+        </para>
+        <para index="8" name="A3Offset" description="A3 Offset" type="number">
+            <range min="-30" max="30"/>
+        </para>
+        <para index="9" name="ReportOnLeave" description="Report On Leave" multi-value="1" type="list">
+            <list name="Yes" value="1" description="Yes"/>
+            <list name="No" value="0" description="No"/>
+        </para>
+        <para index="10" name="A4ThresholdRSRP" description="A4 Threshold RSRP" type="number">
+            <range min="0" max="97"/>
+        </para>
+        <para index="11" name="A4ThresholdRSRQ" description="A4 Threshold RSRQ" type="number">
+            <range min="0" max="34"/>
+        </para>
+        <para index="12" name="A5Threshold1RSRP" description="A5 Threshold 1 RSRP" type="number">
+            <range min="0" max="97"/>
+        </para>
+        <para index="13" name="A5Threshold1RSRQ" description="A5 Threshold 1 RSRQ" type="number">
+            <range min="0" max="34"/>
+        </para>
+        <para index="14" name="A5Threshold2RSRP" description="A5 Threshold 2 RSRP" type="number">
+            <range min="0" max="97"/>
+        </para>
+        <para index="15" name="A5Threshold2RSRQ" description="A5 Threshold 2 RSRQ" type="number">
+            <range min="0" max="34"/>
+        </para>
+        <para index="16" name="Hysteresis" description="Hysteresis" type="number">
+            <range min="0" max="30"/>
+        </para>
+        <para index="17" name="TimeToTrigger" description="Time To Trigger" type="list">
+            <list name="0" value="0" description="0"/>
+            <list name="40" value="40" description="40"/>
+            <list name="64" value="64" description="64"/>
+            <list name="80" value="80" description="80"/>
+            <list name="100" value="100" description="100"/>
+            <list name="128" value="128" description="128"/>
+            <list name="160" value="160" description="160"/>
+            <list name="256" value="256" description="256"/>
+            <list name="320" value="320" description="320"/>
+            <list name="480" value="480" description="480"/>
+            <list name="512" value="512" description="512"/>
+            <list name="640" value="640" description="640"/>
+            <list name="1024" value="1024" description="1024"/>
+            <list name="1280" value="1280" description="1280"/>
+            <list name="2560" value="2560" description="2560"/>
+            <list name="5120" value="5120" description="5120"/>
+        </para>
+        <para index="18" name="TriggerQuantity" description="Trigger Quantity" type="list" multi-value="1">
+            <list name="RSRP" value="RSRP" description="RSRP"/>
+            <list name="RSRQ" value="RSRQ" description="RSRQ"/>
+        </para>
+        <para index="19" name="ReportQuantity" description="Report Quantity" type="list" multi-value="1">
+            <list name="Same As Trigger Quantity" value="SameAsTriggerQuantity" description="Same As Trigger Quantity"/>
+            <list name="Both" value="Both" description="Both"/>
+        </para>
+        <para index="20" name="MaxReportCells" description="Max Report Cells" type="number">
+            <range min="1" max="8"/>
+        </para>
+        <para index="21" name="ReportInterval" description="Report Interval" type="list">
+            <list name='120' value='120'/>
+            <list name='240' value='240'/>
+            <list name='480' value='480'/>
+            <list name='640' value='640'/>
+            <list name='1024' value='1024'/>
+            <list name='2048' value='2048'/>
+            <list name='5012' value='5012'/>
+            <list name='10240' value='10240'/>
+            <list name='60000' value='60000'/>
+            <list name='360000' value='360000'/>
+            <list name='720000' value='720000'/>
+            <list name='1800000' value='1800000'/>
+            <list name='3600000' value='3600000'/>
+        </para>
+        <para index="22" name="ReportAmount" description="Report Amount" type="list" multi-value="1">
+            <list name="Infinity" value="0" description="0"/>
+            <list name="1" value="1" description="0"/>
+            <list name="2" value="2" description="1"/>
+            <list name="4" value="4" description="4"/>
+            <list name="8" value="8" description="8"/>
+            <list name="16" value="16" description="16"/>
+            <list name="32" value="32" description="32"/>
+            <list name="64" value="64" description="64"/>
+        </para>
+        <para index="23" name="X_VENDOR_PS_HO_ENABLED" description="PS Handover Enable" type="list">
+            <list name='Disabled' value='0'/>
+            <list name='Enabled' value='1'/>
+        </para>
+    </command>
+</macro>

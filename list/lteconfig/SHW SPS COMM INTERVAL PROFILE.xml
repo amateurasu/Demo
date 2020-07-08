@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW SPS COMM INTERVAL PROFILE" macro_code="3000" macro_name="Show SPS Common Interval Profile"
+            command_group="7" para_num="2" must_give="" maindisplay="1 2">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index='2' name='pid' description='Profile ID' type='list' parentAttr='1'>
+            <list name='1' value='1'/>
+            <list name='2' value='2'/>
+            <list name='3' value='3'/>
+            <list name='4' value='4'/>
+            <list name='5' value='5'/>
+            <list name='6' value='6'/>
+            <list name='7' value='7'/>
+            <list name='8' value='8'/>
+            <list name='9' value='9'/>
+            <list name='10' value='10'/>
+            <list name='11' value='11'/>
+            <list name='12' value='12'/>
+            <list name='13' value='13'/>
+            <list name='14' value='14'/>
+            <list name='15' value='15'/>
+            <list name='16' value='16'/>
+        </para>
+
+    </command>
+</macro>

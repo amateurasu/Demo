@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG IDLEINTRA" macro_code="3000" macro_name="Change LTE RAN IdleMode Intra Frequency"
+            command_group="7" para_num="15" maindisplay="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="QRxLevMinSIB1" description="QRx Level Min SIB1" type="number">
+            <range min="-70" max="-22"/>
+        </para>
+        <para index="3" name="QRxLevMinSIB3" description="QRx Level Min SIB3" type="number">
+            <range min="-70" max="-22"/>
+        </para>
+        <para index="4" name="QRxLevMinOffset" description="QRx Level Min Offset" type="number">
+            <range min="1" max="8"/>
+        </para>
+        <para index="5" name="SIntraSearch" description="S Intra Search" type="number">
+            <range min="0" max="31"/>
+        </para>
+        <para index="6" name="TReselectionEUTRA" description="TReselection EUTRA" type="number">
+            <range min="0" max="7"/>
+        </para>
+        <para index="7" name="SNonIntraSearch" description="SNon Intra Search" type="number">
+            <range min="0" max="31"/>
+        </para>
+        <para index="8" name="CellReselectionPriority" description="Cell Reselection Priority" type="number">
+            <range min="0" max="7"/>
+        </para>
+        <para index="9" name="PMax" description="PMax" type="number">
+            <range min="-30" max="33"/>
+        </para>
+        <para index="10" name="ThreshServingLow" description="Thresh Serving Low" type="number">
+            <range min="0" max="31"/>
+        </para>
+        <para index="11" name="TReselectionEUTRASFHigh" description="TReselection EUTRA SF High" type="list"
+                multi-value="1">
+            <list name="25" value="25" description="25"/>
+            <list name="50" value="50" description="50"/>
+            <list name="75" value="75" description="75"/>
+            <list name="100" value="100" description="100"/>
+        </para>
+        <para index="12" name="TReselectionEUTRASFMedium" description="TReselection EUTRA SF Medium" type="list"
+                multi-value="1">
+            <list name="25" value="25" description="25"/>
+            <list name="50" value="50" description="50"/>
+            <list name="75" value="75" description="75"/>
+            <list name="100" value="100" description="100"/>
+        </para>
+        <para index="13" name="X_VENDOR_ALLOWED_MEASUREMENT_BW" description="Measurement Bandwidth" type="list"
+                multi-value="1">
+            <list name="BW6" value="BW6" description="BW6"/>
+            <list name="BW15" value="BW15" description="BW15"/>
+            <list name="BW25" value="BW25" description="BW25"/>
+            <list name="BW50" value="BW50" description="BW50"/>
+            <list name="BW75" value="BW75" description="BW75"/>
+            <list name="BW100" value="BW100" description="BW100"/>
+        </para>
+        <para index="14" name="X_VENDOR_S_INTRA_SEARCH_P_R9" description="X_VENDOR_S_INTRA_SEARCH_P_R9" type="number">
+            <range min="0" max="31"/>
+        </para>
+        <para index="15" name="X_VENDOR_S_INTRA_SEARCH_Q_R9" description="X_VENDOR_S_INTRA_SEARCH_Q_R9" type="number">
+            <range min="0" max="31"/>
+        </para>
+
+        <para index="16" name="X_VENDOR_Q_QUAL_MIN_R9" description="X_VENDOR_Q_QUAL_MIN_R9" type="number">
+            <range min="-34" max="-3"/>
+        </para>
+    </command>
+</macro>

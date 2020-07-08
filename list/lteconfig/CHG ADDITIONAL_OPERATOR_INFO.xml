@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG ADDITIONAL_OPERATOR_INFO" macro_code="lamnt13" macro_name="Change Additional Operator Info "
+            command_group="7" para_num="7" maindisplay="1 2 3 4 5 6 7" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="CELL_CAPACITY_CLASS" description="CELL_CAPACITY_CLASS" type="number">
+            <range min="1" max="100"/>
+        </para>
+        <!--
+        <para index="3" name="SI_COUNT" description="SI Count" type="number" >
+            <range min="1" max="8" />
+        </para>
+        -->
+        <para index="3" name="MODIFICATION_PERIOD_COEFF" description="MODIFICATION_PERIOD_COEFF" type="list">
+            <list name="N2" value="0"/>
+            <list name="N4" value="1"/>
+            <list name="N8" value="2"/>
+            <list name="N16" value="3"/>
+
+        </para>
+        <para index="4" name="DEFAULT_PAGING_CYCLE" description="DEFAULT_PAGING_CYCLE" type="list">
+            <list name="rf32" value="0"/>
+            <list name="rf64" value="1"/>
+            <list name="rf128" value="2"/>
+            <list name="rf256" value="3"/>
+
+        </para>
+        <para index="5" name="NB" description="NB" type="list">
+            <list name="FOUR_T" value="0"/>
+            <list name="TWO_T" value="1"/>
+            <list name="ONE_T" value="2"/>
+            <list name="QUARTER_T" value="3"/>
+            <list name="ONE_EIGHTH_T" value="4"/>
+            <list name="ONE_SIXTEENTH_T" value="5"/>
+            <list name="ONE_THIRTY_SECOND_T" value="6"/>
+        </para>
+
+        <para index="6" name="UL_CYCLIC_PREFIX_LENGTH" description="UL_CYCLIC_PREFIX_LENGTH" type="list">
+            <list name="NORMAL_CP" value="0"/>
+            <list name="EXTENDED_CP" value="1"/>
+        </para>
+
+        <para index="7" name="SI_WINDOW_LENGTH" description="SI_WINDOW_LENGTH" type="number">
+            <range min="0" max="6"/>
+        </para>
+
+    </command>
+</macro>

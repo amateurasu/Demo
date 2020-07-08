@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="LK USER" macro_code="3001" macro_name="LOCK USER" command_group="7" para_num="3" maindisplay="1"
+            must_give="1" must_be_confirm="Are you sure you want to active a new software version?">
+        <para index="1" name="Username" id="Username" description="User Name" type="text">
+        </para>
+    </command>
+</macro>

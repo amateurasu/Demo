@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG RRC_UECC_TIMER" macro_code="3000" macro_name="Change RRC UECC Timers Parameters"
+            command_group="7" para_num="5" must_give="" maindisplay="1 2 3 4 5">
+
+        <para index="1" name="UECC_RRC_MME_GUARD_TIMER_TIMERID_9_VALUE" description="UECC_RRC_MME_GUARD_TIMER"
+                type="number">
+            <range min="50" max="65535"/>
+
+        </para>
+        <para index="2" name="UECC_LL_GUARD_TIMER_TIMERID_23_VALUE" description="UECC_LL_GUARD_TIMER" type="number">
+            <range min="50" max="65535"/>
+
+        </para>
+
+        <para index="3" name="UECC_MEAS_CONFIG_GUARD_TIMER_TIMERID_25_VALUE" description="UECC_MEAS_CONFIG_GUARD_TIMER"
+                type="number">
+            <range min="50" max="65535"/>
+
+        </para>
+
+        <para index="4" name="UECC_RRC_TRG_HO_GUARD_TIMER_TIMERID_26_VALUE" description="UECC_RRC_TRG_HO_GUARD_TIMER"
+                type="number">
+            <range min="50" max="65535"/>
+        </para>
+
+        <para index="5" name="UECC_CRE_GUARD_TIMER_TIMERID_31_VALUE" description="UECC_CRE_GUARD_TIMER" type="number">
+            <range min="50" max="65535"/>
+        </para>
+
+    </command>
+</macro>

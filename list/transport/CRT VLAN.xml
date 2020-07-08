@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CRT VLAN" macro_code="3000" macro_name="Create VLAN" command_group="7" para_num="5"
+            maindisplay="1 2 3 4 5" must_give="1 2 3 4 5">
+
+        <para index='1' name='vlanId' description='Vlan ID' type='number'>
+            <range min='2' max='4094'/>
+        </para>
+
+        <para index="2" name="interface" description="Physical Interface of Vlan" type="list" default='fm1-mac3'>
+            <list name='FE1/GE1' value='fm1-mac3'/>
+            <list name='SFP1' value='fm1-mac9'/>
+            <list name='SFP0' value='fm1-mac10'/>
+        </para>
+
+        <para index="3" name="vlanName" description="Vlan Name" type="text" minlength="1" maxlength="63">
+        </para>
+
+        <para index="4" name="vlanIp" description="Vlan IP Address" type="ipaddress"
+                pattern="/^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/">
+        </para>
+
+        <para index="5" name="vlanNetmask" description="Vlan IP Netmask" type="ipaddress"
+                pattern="/^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/">
+        </para>
+
+    </command>
+</macro>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG ADD_SCHED_PARAMS" macro_code="3000" macro_name="Change Additional Packet Scheduling Params"
+            command_group="7" para_num="3" maindisplay="1 2 3" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="frequency_selective_scheduling" description="Frequency Selective Scheduling"
+                type="number">
+            <range min="0" max="3"/>
+        </para>
+        <para index="2" name="cqi_reporting_mode" description="CQI Reporting Mode" type="number">
+            <range min="0" max="3"/>
+        </para>
+    </command>
+</macro>

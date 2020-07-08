@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG DYNAMIC CFI EXTENSION" macro_code="3000" macro_name="Change Dynamic CFI Extension"
+            command_group="7" para_num="7" maindisplay="1 2 3 4 5 6 7" must_give="">
+
+        <para index='1' name='up_index' description='CCE Correction Step Up Factor Index' type='number' parentAttr='1'>
+            <range min='1' max='4'/>
+        </para>
+        <para index='2' name='cce_correction_step_up_factor' description='CCE Correction Step Up Factor Value'
+                type='number'>
+            <range min='0' max='10000'/>
+        </para>
+
+        <para index='3' name='down_index' description='CCE Correction Step Down Factor Index' type='number'>
+            <range min='1' max='4'/>
+        </para>
+        <para index='4' name='cce_correction_step_down_factor' description='CCE Correction Step Down Factor Value'
+                type='number'>
+            <range min='0' max='10000'/>
+        </para>
+
+        <para index='5' name='adjust_index' description='CCE Adjust Factor Index' type='number' parentAttr='1'>
+            <range min='1' max='4'/>
+        </para>
+        <para index='6' name='cce_adjust_factor' description='CCE Adjust Factor Value' type='number'>
+            <range min='0' max='10000'/>
+        </para>
+
+        <para index="7" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+    </command>
+</macro>

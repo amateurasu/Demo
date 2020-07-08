@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG MME SELECTION ALGORITHM" macro_code="3000" macro_name="Change algorithm to select MME"
+            command_group="7" para_num="1" must_give="1" maindisplay="1">
+        <para index="1" name="mme_selection_algo" description="mme_selection_algo" type="list">
+            <list name="Round Robin" value="0"/>
+            <list name="Weight Factor" value="1"/>
+        </para>
+    </command>
+</macro>

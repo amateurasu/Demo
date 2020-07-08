@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHMOD PCI_CFL" macro_code="3000" macro_name="Change Mode PCI-Conflict Feature" command_group="7"
+            para_num="1" maindisplay="1" must_give="1">
+
+        <para index="1" name="ENABLE" description="PCI-Conflict Mode" type="list" default='1'>
+            <list name="ENABLE" value="1"/>
+            <list name="DISABLE" value="0"/>
+        </para>
+
+    </command>
+</macro>

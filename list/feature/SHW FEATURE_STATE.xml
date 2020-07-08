@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW FEATURE_STATE" macro_code="3000" macro_name="Show Feature State" command_group="7" para_num="0"
+            maindisplay="1" must_give="1">
+
+        <para index="1" name="Option" description="Option" type="list">
+            <list name="All Feature" value="0"/>
+            <list name="Feature Enable" value="1"/>
+            <list name="Feature Name" value="2"/>
+            <child_select>
+                <value min="1" max="1"/>
+                <open index="2" must_give="2"/>
+            </child_select>
+
+            <child_select>
+                <value min="2" max="2"/>
+                <open index="3" must_give="3"/>
+            </child_select>
+        </para>
+        <para index="2" name="CellId" description="Cell ID" type="list" default=''>
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="3" name="FeatureName" description="Feature Name" type="text" minlength="1" maxlength="256">
+        </para>
+
+    </command>
+</macro>

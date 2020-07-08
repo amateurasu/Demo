@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG PHYSRS" macro_code="3000" macro_name="Change LTE RAN PHY SRS" command_group="7" para_num="6"
+            maindisplay="1 2 3 4 5 6" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="SRSEnabled" description="SRS Enabled" type="list">
+            <list name="Disable" value="0"/>
+            <list name="Enable" value="1"/>
+
+        </para>
+        <para index="3" name="SRSBandwidthConfig" description="SRS Bandwidth Configuration" type="list">
+            <list name="bw0" value="bw0"/>
+            <list name="bw1" value="bw1"/>
+            <list name="bw2" value="bw2"/>
+            <list name="bw3" value="bw3"/>
+            <list name="bw4" value="bw4"/>
+            <list name="bw5" value="bw5"/>
+            <list name="bw6" value="bw6"/>
+            <list name="bw7" value="bw7"/>
+        </para>
+
+        <para index="4" name="SRSMaxUpPTS" description="SRS Max UpPTS Flag" type="list">
+            <list name="TRUE" value="1"/>
+            <list name="FALSE" value="0"/>
+
+        </para>
+
+        <para index="5" name="AckNackSRSSimultaneousTransmission"
+                description="Ack Nack SRS Simultaneous Transmission Flag" type="list">
+            <list name="True" value="1"/>
+            <list name="False" value="0"/>
+
+        </para>
+
+        <para index="6" name="X_VENDOR_SRS_SUBFRAME_CONFIG" description="SRS Subframe Configuration" type="number">
+            <range min='0' max='15'/>
+
+        </para>
+
+    </command>
+</macro>

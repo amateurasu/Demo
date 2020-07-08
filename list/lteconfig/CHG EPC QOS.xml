@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG EPC_QOS" macro_code="3001" macro_name="Change LTE EPC QOS" command_group="7" para_num="36"
+            maindisplay="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36"
+            must_give="1 2">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="QOSNumber" description="QoS Number" type="list" multi-value="1" parentAttr='1'>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+            <list name="3" value="3" description="3"/>
+            <list name="4" value="4" description="4"/>
+            <list name="5" value="5" description="5"/>
+            <list name="6" value="6" description="6"/>
+            <list name="7" value="7" description="7"/>
+            <list name="8" value="8" description="8"/>
+            <list name="9" value="9" description="9"/>
+        </para>
+        <para index="3" name="Type" description="Type" type="list">
+            <list name="GBR" value="0" description="GBR"/>
+            <list name="Non-GBR" value="1" description="Non-GBR"/>
+        </para>
+        <para index="4" name="Priority" description="Priority" type="number">
+            <range min="1" max="9"/>
+        </para>
+        <para index="5" name="PacketDelayBudget" description="PacketDelayBudget" type='number'>
+            <range min="50" max="300"/>
+        </para>
+        <para index="6" name="X_VENDOR_TTI_BUNDLING" description="TTI_BUNDLING" type="list">
+            <list name="DISABLED" value="0"/>
+            <list name="ENABLED" value="1"/>
+        </para>
+        <para index="7" name="X_VENDOR_LOSSLESS_HO_REQUIRED" description="LOSSLESS_HO_REQUIRED" type="list">
+            <list name='0' value='0'/>
+            <list name='1' value='1'/>
+        </para>
+        <para index="8" name="X_VENDOR_DL_FORWARDING_APPLICABILTIY" description="DL_FORWARDING_APPLICABILTIY"
+                type="list">
+            <list name='0' value='0'/>
+            <list name='1' value='1'/>
+        </para>
+        <para index="9" name="X_VENDOR_UE_INACTIVITY_TIMER_CONFIG" description="UE_INACTIVITY_TIMER_CONFIG"
+                type="number">
+            <range min="0" max="16777216"/>
+        </para>
+        <para index="10" name="X_VENDOR_RLC_MODE" description="X_VENDOR_RLC_MODE" type="list">
+            <list name="AM" value="1"/>
+            <list name="UM" value="2"/>
+        </para>
+
+        <para index="11" name="X_VENDOR_DISCARD_TIMER" description="X_VENDOR_DISCARD_TIMER" type="list">
+            <list name="ms50" value="0" description="1"/>
+            <list name="ms100" value="1" description="2"/>
+            <list name="infinity" value="7" description="3"/>
+        </para>
+        <para index="12" name="X_VENDOR_DL_PARAM_T_REORDERING_AM" description="DL_PARAM_T_REORDERING_AM" type="list">
+            <list name="0" value="0" description="0"/>
+            <list name="5" value="1" description="5"/>
+            <list name="10" value="2" description="10"/>
+            <list name="15" value="3" description="15"/>
+            <list name="20" value="4" description="20"/>
+            <list name="25" value="5" description="25"/>
+            <list name="30" value="6" description="30"/>
+            <list name="35" value="7" description="35"/>
+            <list name="40" value="8" description="40"/>
+            <list name="45" value="9" description="45"/>
+            <list name="50" value="10" description="50"/>
+            <list name="55" value="11" description="55"/>
+            <list name="60" value="12" description="60"/>
+            <list name="65" value="13" description="65"/>
+            <list name="70" value="14" description="70"/>
+            <list name="75" value="15" description="75"/>
+            <list name="80" value="16" description="80"/>
+            <list name="85" value="17" description="85"/>
+            <list name="90" value="18" description="90"/>
+            <list name="95" value="19" description="95"/>
+            <list name="100" value="20" description="100"/>
+            <list name="110" value="21" description="110"/>
+            <list name="120" value="22" description="120"/>
+            <list name="130" value="23" description="130"/>
+            <list name="140" value="24" description="140"/>
+            <list name="150" value="25" description="150"/>
+            <list name="160" value="26" description="160"/>
+            <list name="170" value="27" description="170"/>
+            <list name="180" value="28" description="180"/>
+            <list name="190" value="29" description="190"/>
+            <list name="200" value="30" description="200"/>
+        </para>
+        <para index="13" name="X_VENDOR_DL_PARAM_T_REORDERING_UM" description="DL_PARAM_T_REORDERING_UM" type="list">
+            <list name="0" value="0" description="0"/>
+            <list name="5" value="1" description="5"/>
+            <list name="10" value="2" description="10"/>
+            <list name="15" value="3" description="15"/>
+            <list name="20" value="4" description="20"/>
+            <list name="25" value="5" description="25"/>
+            <list name="30" value="6" description="30"/>
+            <list name="35" value="7" description="35"/>
+            <list name="40" value="8" description="40"/>
+            <list name="45" value="9" description="45"/>
+            <list name="50" value="10" description="50"/>
+            <list name="55" value="11" description="55"/>
+            <list name="60" value="12" description="60"/>
+            <list name="65" value="13" description="65"/>
+            <list name="70" value="14" description="70"/>
+            <list name="75" value="15" description="75"/>
+            <list name="80" value="16" description="80"/>
+            <list name="85" value="17" description="85"/>
+            <list name="90" value="18" description="90"/>
+            <list name="95" value="19" description="95"/>
+            <list name="100" value="20" description="100"/>
+            <list name="110" value="21" description="110"/>
+            <list name="120" value="22" description="120"/>
+            <list name="130" value="23" description="130"/>
+            <list name="140" value="24" description="140"/>
+            <list name="150" value="25" description="150"/>
+            <list name="160" value="26" description="160"/>
+            <list name="170" value="27" description="170"/>
+            <list name="180" value="28" description="180"/>
+            <list name="190" value="29" description="190"/>
+            <list name="200" value="30" description="200"/>
+        </para>
+        <para index='14' name='X_VENDOR_DSCP' description='X_VENDOR_DSCP' type="number">
+            <range min='0' max='56'/>
+        </para>
+        <para index="15" name="X_VENDOR_LOGICAL_CHANNEL_GROUP" description="LOGICAL_CHANNEL_GROUP" type="list">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+            <list name="3" value="3" description="3"/>
+        </para>
+        <para index="16" name="X_VENDOR_PACKETERRORLOSSRATE" description="PACKETERRORLOSSRATE" type="number">
+            <range min='2' max='6'/>
+        </para>
+        <para index="17" name="X_VENDOR_RLC_AM_ENB_STATUS_REPORT_REQUIRED"
+                description="RLC_AM_ENB_STATUS_REPORT_REQUIRED" type="list">
+            <list name="FALSE" value="0" description="FALSE"/>
+            <list name="TRUE" value="1" description="TRUE"/>
+        </para>
+        <para index="18" name="X_VENDOR_RLC_AM_STATUS_REPORT_REQUIRED" description="RLC_AM_STATUS_REPORT_REQUIRED"
+                type="list">
+            <list name="FALSE" value="0" description="FALSE"/>
+            <list name="TRUE" value="1" description="TRUE"/>
+        </para>
+        <para index="19" name="X_VENDOR_RLC_UM_PDCP_SN_SIZE" description="RLC_UM_PDCP_SN_SIZE" type="list">
+            <list name="7" value="7" description="7"/>
+            <list name="12" value="12" description="12"/>
+        </para>
+        <para index="20" name="X_VENDOR_UL_AM_POLL_BYTE" description="UL_AM_POLL_BYTE" type="list">
+            <list name="25" value="0" description="25"/>
+            <list name="50" value="1" description="50"/>
+            <list name="75" value="2" description="75"/>
+            <list name="100" value="3" description="100"/>
+            <list name="125" value="4" description="125"/>
+            <list name="250" value="5" description="250"/>
+            <list name="375" value="6" description="375"/>
+            <list name="500" value="7" description="500"/>
+            <list name="750" value="8" description="750"/>
+            <list name="1000" value="9" description="1000"/>
+            <list name="1250" value="10" description="1250"/>
+            <list name="1500" value="11" description="1500"/>
+            <list name="2000" value="12" description="2000"/>
+            <list name="3000" value="13" description="3000"/>
+            <list name="infinity" value="14" description="infinity"/>
+        </para>
+        <para index='21' name='X_VENDOR_MAX_HARQ_RETRANS' description='X_VENDOR_MAX_HARQ_RETRANS' type="number">
+            <range min='0' max='13'/>
+        </para>
+        <para index='22' name='X_VENDOR_MAX_HARQ_TX' description='X_VENDOR_MAX_HARQ_TX' type="list">
+            <list name="n1" value="0"/>
+            <list name="n2" value="1"/>
+            <list name="n3" value="2"/>
+            <list name="n4" value="3"/>
+            <list name="n5" value="4"/>
+            <list name="n6" value="5"/>
+            <list name="n7" value="5"/>
+            <list name="n8" value="7"/>
+            <list name="n10" value="8"/>
+            <list name="n12" value="9"/>
+            <list name="n16" value="10"/>
+            <list name="n20" value="11"/>
+            <list name="n24" value="12"/>
+            <list name="n28" value="13"/>
+        </para>
+
+        <para index='23' name='DL_MINBR_QCI' description='DL_MINBR_QCI' type="number">
+            <range min='0' max='150000000'/>
+        </para>
+
+        <para index='24' name='UL_MINBR_QCI' description='DL_MINBR_QCI' type="number">
+            <range min='0' max='150000000'/>
+        </para>
+
+        <para index='25' name='QCI_SCHEDULING' description='QCI_SCHEDULING' type="number">
+            <range min='0' max='3'/>
+        </para>
+
+        <para index="26" name="X_VENDOR_SN_LEN_UL_RLC" description="X_VENDOR_SN_LEN_UL_RLC" type="number">
+            <range min="5" max="10"/>
+        </para>
+        <para index="27" name="X_VENDOR_SN_LEN_DL_RLC" description="X_VENDOR_SN_LEN_DL_RLC" type="number">
+            <range min="5" max="10"/>
+        </para>
+
+        <para index="28" name="X_VENDOR_MAX_RETX_THRESHOLD" description="X_VENDOR_MAX_RETX_THRESHOLD" type="list">
+
+            <list name="1" value="0"/>
+            <list name="2" value="1"/>
+            <list name="3" value="2"/>
+            <list name="4" value="4"/>
+            <list name="6" value="6"/>
+            <list name="8" value="8"/>
+            <list name="16" value="16"/>
+            <list name="32" value="32"/>
+
+        </para>
+
+        <para index="29" name="X_VENDOR_SR_MASK_FLAG" description="X_VENDOR_SR_MASK_FLAG" type="number">
+            <range min="0" max="7"/>
+        </para>
+
+        <para index="30" name="X_VENDOR_SR_PROHIBIT_TIMER_R9" description="X_VENDOR_SR_PROHIBIT_TIMER_R9" type="number">
+            <range min="0" max="7"/>
+        </para>
+
+        <para index="31" name="X_VENDOR_SR_PERIODICITY_START_VAL" description="X_VENDOR_SR_PERIODICITY_START_VAL"
+                type="list">
+            <list name="1ms" value="1ms"/>
+            <list name="2ms" value="2ms"/>
+            <list name="5ms" value="5ms"/>
+            <list name="10ms" value="10ms"/>
+            <list name="20ms" value="20ms"/>
+            <list name="40ms" value="40ms"/>
+            <list name="80ms" value="80ms"/>
+
+        </para>
+
+        <para index="32" name="X_VENDOR_SR_PERIODICITY_END_VAL" description="X_VENDOR_SR_PERIODICITY_END_VAL"
+                type="list">
+            <list name="1ms" value="1ms"/>
+            <list name="2ms" value="2ms"/>
+            <list name="5ms" value="5ms"/>
+            <list name="10ms" value="10ms"/>
+            <list name="20ms" value="20ms"/>
+            <list name="40ms" value="40ms"/>
+            <list name="80ms" value="80ms"/>
+        </para>
+
+        <para index="33" name="X_VENDOR_DSR_MAX_TRANSMISSIONS" description="X_VENDOR_DSR_MAX_TRANSMISSIONS" type="list">
+            <list name="n4" value="n4"/>
+            <list name="n8" value="n8"/>
+            <list name="n16" value="n16"/>
+            <list name="n32" value="n32"/>
+            <list name="n64" value="n64"/>
+        </para>
+
+        <para index="34" name="X_VENDOR_DDL_PARAM_T_STATUES_PROHIBIT" description="DDL_PARAM_T_STATUES_PROHIBIT"
+                type="list">
+            <list name="0" value="0"/>
+            <list name="5" value="5"/>
+            <list name="10" value="10"/>
+            <list name="15" value="15"/>
+            <list name="20" value="20"/>
+            <list name="25" value="25"/>
+            <list name="30" value="30"/>
+
+            <list name="35" value="35"/>
+            <list name="40" value="40"/>
+            <list name="45" value="45"/>
+            <list name="50" value="50"/>
+            <list name="55" value="55"/>
+            <list name="60" value="60"/>
+            <list name="65" value="65"/>
+
+            <list name="70" value="70"/>
+            <list name="75" value="75"/>
+            <list name="80" value="80"/>
+            <list name="85" value="85"/>
+            <list name="90" value="90"/>
+            <list name="95" value="95"/>
+            <list name="100" value="100"/>
+
+            <list name="105" value="105"/>
+            <list name="110" value="110"/>
+            <list name="115" value="115"/>
+            <list name="120" value="120"/>
+            <list name="125" value="125"/>
+            <list name="130" value="130"/>
+            <list name="135" value="135"/>
+
+            <list name="140" value="140"/>
+            <list name="145" value="145"/>
+            <list name="150" value="150"/>
+            <list name="155" value="155"/>
+            <list name="160" value="160"/>
+            <list name="165" value="165"/>
+            <list name="170" value="170"/>
+
+            <list name="175" value="175"/>
+            <list name="180" value="180"/>
+            <list name="185" value="185"/>
+            <list name="190" value="190"/>
+            <list name="195" value="195"/>
+            <list name="200" value="200"/>
+            <list name="205" value="205"/>
+            <list name="210" value="210"/>
+            <list name="215" value="215"/>
+            <list name="220" value="220"/>
+            <list name="225" value="225"/>
+            <list name="230" value="230"/>
+            <list name="235" value="235"/>
+            <list name="240" value="240"/>
+
+            <list name="245" value="245"/>
+            <list name="250" value="250"/>
+            <list name="300" value="300"/>
+            <list name="350" value="350"/>
+            <list name="400" value="400"/>
+            <list name="450" value="450"/>
+            <list name="500" value="500"/>
+        </para>
+
+        <para index="35" name="X_VENDOR_DDL_PARAM_T_POLL_PDU" description="X_VENDOR_DDL_PARAM_T_POLL_PDU" type="list">
+
+            <list name="0" value="0"/>
+            <list name="4" value="4"/>
+            <list name="8" value="8"/>
+            <list name="16" value="16"/>
+            <list name="32" value="32"/>
+            <list name="64" value="64"/>
+            <list name="128" value="128"/>
+            <list name="256" value="256"/>
+
+        </para>
+
+        <para index="36" name="X_VENDOR_DDL_PARAM_T_POLL_RETRANSMIT" description="DDL_PARAM_T_POLL_RETRANSMIT"
+                type="list">
+            <list name="0" value="0"/>
+            <list name="5" value="5"/>
+            <list name="10" value="10"/>
+            <list name="15" value="15"/>
+            <list name="20" value="20"/>
+            <list name="25" value="25"/>
+            <list name="30" value="30"/>
+
+            <list name="35" value="35"/>
+            <list name="40" value="40"/>
+            <list name="45" value="45"/>
+            <list name="50" value="50"/>
+            <list name="55" value="55"/>
+            <list name="60" value="60"/>
+            <list name="65" value="65"/>
+
+            <list name="70" value="70"/>
+            <list name="75" value="75"/>
+            <list name="80" value="80"/>
+            <list name="85" value="85"/>
+            <list name="90" value="90"/>
+            <list name="95" value="95"/>
+            <list name="100" value="100"/>
+
+            <list name="105" value="105"/>
+            <list name="110" value="110"/>
+            <list name="115" value="115"/>
+            <list name="120" value="120"/>
+            <list name="125" value="125"/>
+            <list name="130" value="130"/>
+            <list name="135" value="135"/>
+
+            <list name="140" value="140"/>
+            <list name="145" value="145"/>
+            <list name="150" value="150"/>
+            <list name="155" value="155"/>
+            <list name="160" value="160"/>
+            <list name="165" value="165"/>
+            <list name="170" value="170"/>
+
+            <list name="175" value="175"/>
+            <list name="180" value="180"/>
+            <list name="185" value="185"/>
+            <list name="190" value="190"/>
+            <list name="195" value="195"/>
+            <list name="200" value="200"/>
+            <list name="205" value="205"/>
+            <list name="210" value="210"/>
+            <list name="215" value="215"/>
+            <list name="220" value="220"/>
+            <list name="225" value="225"/>
+            <list name="230" value="230"/>
+            <list name="235" value="235"/>
+            <list name="240" value="240"/>
+
+            <list name="245" value="245"/>
+            <list name="250" value="250"/>
+            <list name="300" value="300"/>
+            <list name="350" value="350"/>
+            <list name="400" value="400"/>
+            <list name="450" value="450"/>
+            <list name="500" value="500"/>
+        </para>
+
+    </command>
+</macro>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG SPS DL INTERVAL PROFILE" macro_code="3000" macro_name="Change SPS DL Interval Profile"
+            command_group="7" para_num="7" must_give="" maindisplay="1 2 3 4 5 6 7">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index='2' name='pid' description='Profile ID' type='number' parentAttr='1'>
+            <range min='1' max='16'/>
+        </para>
+
+        <para index='3' name='dlMinMcsSps' description='DL Min MCS SPS' type='number' default='6'>
+            <range min='0' max='15'/>
+        </para>
+        <para index='4' name='dlMcsMargin' description='DL MCS Margin' type='number' default='4'>
+            <range min='0' max='8'/>
+        </para>
+        <para index='5' name='dlTbsizeMarginSps' description='DL TB Size Margin SPS' type='number' default='4'>
+            <range min='0' max='20'/>
+        </para>
+        <para index='6' name='dlJitterHandlingOption' description='DJ Jitter Handling Option' type='number'>
+            <range min='0' max='2'/>
+        </para>
+        <para index='7' name='rlcSduThresForDra' description='RLC SDU Threshold For DRA' type='number' default='4'>
+            <range min='2' max='10'/>
+        </para>
+    </command>
+</macro>

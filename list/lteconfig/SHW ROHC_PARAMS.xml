@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW ROHC_PARAMS" macro_code="3000" macro_name="Show ROHC parameters" command_group="8" para_num="1"
+            must_give="1 2" maindisplay="1 2">
+        <para index="1" name="cellId" description="Cell ID" type="list" multi-value="1" parentAttr='1'>
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+            <!-- <list name="All" value="all" description="All" /> -->
+        </para>
+        <para index="2" name="QOSNumber" description="QoS Number" type="list" multi-value="1" parentAttr='1'>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+            <list name="3" value="3" description="3"/>
+            <list name="4" value="4" description="4"/>
+            <list name="5" value="5" description="5"/>
+            <list name="6" value="6" description="6"/>
+            <list name="7" value="7" description="7"/>
+            <list name="8" value="8" description="8"/>
+            <list name="9" value="9" description="9"/>
+        </para>
+    </command>
+</macro>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW TOPO" macro_code="3000" macro_name="Show Equipment Topology" command_group="7" para_num="2"
+            maindisplay="1 2" must_give="1">
+
+        <para index='1' name='CardType' type='number' description='Card Type'>
+            <range min="0" max="6"/>
+        </para>
+        <para index='2' name='CardIndex' type='number' description='Card Index'>
+            <range min="0" max="6"/>
+        </para>
+
+    </command>
+</macro>

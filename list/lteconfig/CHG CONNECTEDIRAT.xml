@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG CONNECTEDIRAT" macro_code="3000" macro_name="Change LTE RAN Connected Mode IRAT"
+            command_group="7" para_num="20" maindisplay="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23"
+            must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="QoffsettUTRA" description="Q offsett UTRA" type="number">
+            <range min="-15" max="15"/>
+        </para>
+        <para index="3" name="FilterCoefficientUTRA" description="Filter Coefficient UTRA" type="list">
+            <list name='0' value='0'/>
+            <list name='1' value='1'/>
+            <list name='2' value='2'/>
+            <list name='3' value='3'/>
+            <list name='4' value='4'/>
+            <list name='5' value='5'/>
+            <list name='6' value='6'/>
+            <list name='7' value='7'/>
+            <list name='8' value='8'/>
+            <list name='9' value='9'/>
+            <list name='11' value='11'/>
+            <list name='13' value='13'/>
+            <list name='15' value='15'/>
+            <list name='17' value='17'/>
+            <list name='19' value='19'/>
+        </para>
+        <para index="4" name="MeasQuantityUTRAFDD" description="Measurament Quantity UTRAFDD" type="list"
+                multi-value="1">
+            <list name="CPICH-RSCP" value="CPICH-RSCP" description="CPICH-RSCP"/>
+            <list name="CPICH-EcN0" value="CPICH-EcN0" description="CPICH-EcN0"/>
+        </para>
+        <para index="5" name="B1ThresholdUTRARSCP" description="B1 Threshold UTRASCP" type="number">
+            <range min="-5" max="91"/>
+        </para>
+        <para index="6" name="B1ThresholdUTRAEcN0" description="B1 Threshold UTRAEcN0" type="number">
+            <range min="0" max="49"/>
+        </para>
+        <para index="7" name="QoffsetGERAN" description="Q offset GERAN" type="number">
+            <range min="-15" max="15"/>
+        </para>
+        <para index="8" name="FilterCoefficientGERAN" description="Filter Coefficient GERAN" type="list">
+            <list name='0' value='0'/>
+            <list name='1' value='1'/>
+            <list name='2' value='2'/>
+            <list name='3' value='3'/>
+            <list name='4' value='4'/>
+            <list name='5' value='5'/>
+            <list name='6' value='6'/>
+            <list name='7' value='7'/>
+            <list name='8' value='8'/>
+            <list name='9' value='9'/>
+            <list name='11' value='11'/>
+            <list name='13' value='13'/>
+            <list name='15' value='15'/>
+            <list name='17' value='17'/>
+            <list name='19' value='19'/>
+
+        </para>
+        <para index="9" name="B1ThresholdGERAN" description="B1 Threshold GERAN" type="number">
+            <range min="0" max="63"/>
+        </para>
+        <para index="10" name="QoffsetCDMA2000" description="Q offset CDMA2000" type="number">
+            <range min="-15" max="15"/>
+        </para>
+        <para index="11" name="MeasQuantityCDMA2000" description="Measurament Quantity CDMA2000" type="list"
+                multi-value="1">
+            <list name="Pilot Strength" value="PilotStrength" description="Pilot Strength"/>
+            <list name="Pilot Pn Phase And Pilot Strength" value="PilotPnPhaseAndPilotStrength"
+                    description="Pilot Pn Phase And Pilot Strength"/>
+        </para>
+        <para index="12" name="B1ThresholdCDMA2000" description="B1 Threshold CDMA2000" type="number">
+            <range min="0" max="63"/>
+        </para>
+        <para index="13" name="B2Threshold2UTRARSCP" description="B2 Threshold2 UTRARSCP" type="number">
+            <range min="-5" max="91"/>
+        </para>
+        <para index="14" name="B2Threshold2UTRAEcN0" description="B2 Threshold2 UTRAEcN0" type="number">
+            <range min="0" max="49"/>
+        </para>
+        <para index="15" name="B2Threshold2GERAN" description="B2 Threshold2 GERAN" type="number">
+            <range min="0" max="63"/>
+        </para>
+        <para index="16" name="B2Threshold2CDMA2000" description="B2 Threshold2 CDMA2000" type="number">
+            <range min="0" max="63"/>
+        </para>
+        <para index="17" name="Hysteresis" description="Hysteresis" type="number">
+            <range min="0" max="30"/>
+        </para>
+        <para index="18" name="TimeToTrigger" description="Time To Trigger" type="list">
+            <list name='0' value='0'/>
+            <list name='40' value='40'/>
+            <list name='64' value='64'/>
+            <list name='80' value='80'/>
+            <list name='100' value='100'/>
+            <list name='128' value='128'/>
+            <list name='160' value='160'/>
+            <list name='256' value='256'/>
+            <list name='320' value='320'/>
+            <list name='480' value='480'/>
+            <list name='512' value='512'/>
+            <list name='640' value='640'/>
+            <list name='1024' value='1024'/>
+            <list name='1280' value='1280'/>
+            <list name='2560' value='2560'/>
+            <list name='5120' value='5120'/>
+        </para>
+        <para index="19" name="ReportInterval" description="Report Interval" type="list">
+            <list name='120' value='120'/>
+            <list name='240' value='240'/>
+            <list name='480' value='480'/>
+            <list name='640' value='640'/>
+            <list name='1024' value='1024'/>
+            <list name='2048' value='2048'/>
+            <list name='5120' value='5120'/>
+            <list name='10240' value='10240'/>
+            <list name='60000' value='60000'/>
+            <list name='360000' value='360000'/>
+            <list name='1800000' value='1800000'/>
+            <list name='3600000' value='3600000'/>
+        </para>
+        <para index="20" name="ReportAmount" description="Report Amount" type="list" multi-value="1">
+            <list name="Infinity" value="0" description="0"/>
+            <list name="1" value="1" description="0"/>
+            <list name="2" value="2" description="1"/>
+            <list name="4" value="4" description="4"/>
+            <list name="8" value="8" description="8"/>
+            <list name="16" value="16" description="16"/>
+            <list name="32" value="32" description="32"/>
+            <list name="64" value="64" description="64"/>
+        </para>
+        <para index='21' name='B2Threshold1RSRP' description='B2Threshold1RSRP' type='number'>
+            <range min='0' max='97'/>
+        </para>
+        <para index='22' name='B2Threshold1RSRQ' description='B2Threshold1RSRQ' type='number'>
+            <range min='0' max='34'/>
+        </para>
+
+        <para index='23' name='MaxReportCells' description='MaxReportCells' type='number'>
+            <range min='1' max='8'/>
+        </para>
+
+    </command>
+</macro>

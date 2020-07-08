@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG ADMISSION_CONTROL_INFO" macro_code="3000" macro_name="Change Admission Control Information"
+            command_group="7" para_num="12" must_give="1" maindisplay="1 2 3 4 5 6 7 8 9 10 11 12">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index='2' name='max_num_gbr_drbs_per_ue' description='Max Number GBR DRBS Per UE' type='number'>
+            <range min='1' max='8'/>
+        </para>
+        <para index='3' name='max_num_non_gbr_drbs_per_ue' description='Max Number  Non-GBR DRBS per UE' type='number'>
+            <range min='1' max='8'/>
+        </para>
+        <para index='4' name='total_backhaul_capacity' description='Total Backhaul Capacity' type='number'>
+            <range min='1' max='20000'/>
+        </para>
+        <para index='5' name='capacity_threshold' description='Capacity Threshold' type='number'>
+            <range min='0' max='100'/>
+        </para>
+        <para index='6' name='dl_prb_budget_gbr' description='DL PRB Budget GBR' type='number'>
+            <range min='0' max='100'/>
+        </para>
+        <para index='7' name='ul_prb_budget_gbr' description='UL PRB Budget GBR' type='number'>
+            <range min='0' max='100'/>
+        </para>
+        <para index='8' name='dl_prb_budget_ngbr' description='DL PRB Budget Non-GBR' type='number'>
+            <range min='0' max='100'/>
+        </para>
+        <para index='9' name='ul_prb_budget_ngbr' description='UL PRB Budget Non-GBR' type='number'>
+            <range min='0' max='100'/>
+        </para>
+        <para index='10' name='resource_reserved_for_existing_users' description='Resource Reserved For Existing User'
+                type='number'>
+            <range min='0' max='100'/>
+        </para>
+        <para index='11' name='preemption_allowed' description='Preemption Allowed' type='list'>
+            <list name='0' value='0'/>
+            <list name='1' value='1'/>
+        </para>
+        <para index='12' name='preemption_status' description='Preemption Status' type='list'>
+            <list value='0' name='OFF'/>
+            <list value='1' name='ON'/>
+        </para>
+    </command>
+</macro>

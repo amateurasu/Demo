@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG ALM_SEVERITY" macro_code="3001" macro_name="Change Alarm Reporting Mechanism" command_group="7"
+            para_num="2" maindisplay="1 2" must_give="1 2">
+
+        <para index='1' name='AlarmId' type='number' description='AlarmId'>
+            <range min="0" max="9999999"/>
+        </para>
+
+        <para index='2' name='Severity' type='list' description='Severity'>
+
+            <list name="Critical" value="0"/>
+            <list name="Major" value="1"/>
+            <list name="Minor" value="2"/>
+            <list name="Warning" value="3"/>
+            <list name="Indeterminate" value="4"/>
+
+        </para>
+
+    </command>
+</macro>

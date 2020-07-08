@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="RST CELL" macro_code="3000" macro_name="Restart Cell" command_group="7" para_num="1" maindisplay="1"
+            must_give="1">
+
+        <para index="1" name="CellId" description="Cell ID" type='list' default='0'>
+            <list name="0" value="0"/>
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+        </para>
+
+    </command>
+</macro>

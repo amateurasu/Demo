@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG CELLRESTRICT" macro_code="3000" macro_name="Change LTE Cell Restriction" command_group="7"
+            para_num="3" maindisplay="1 2 3 4" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="CellBarred" description="Cell Barred" multi_value="1" type="list">
+            <list name="Yes" value="1" description="Yes"/>
+            <list name="No" value="0" description="No"/>
+        </para>
+        <para index="3" name="BarringForEmergency" description="Barring For Emergency" multi_value="1" type="list">
+            <list name="Yes" value="1" description="Yes"/>
+            <list name="No" value="0" description="No"/>
+        </para>
+
+        <para index="4" name="IntraFreqCellReselectionIndicator" description="Infra Freq Cell Reslection Indicator"
+                type="list">
+            <list name="Allowed" value="Allowed"/>
+            <list name="Not Allowed" value="Not Allowed"/>
+        </para>
+
+    </command>
+</macro>

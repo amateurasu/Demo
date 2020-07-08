@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG LOAD_REPORT_FOR_SERVING_CELL" macro_code="3000"
+            macro_name="Change load reporting for serving cell" command_group="7" para_num="1" maindisplay="1"
+            must_give="">
+        <para index="1" name="ReportingInterval" description="Reporting Interval" type="number">
+            <range min="1" max="100"/>
+        </para>
+    </command>
+</macro>

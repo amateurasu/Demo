@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG CLOCK_MASTER" macro_code="3000" macro_name="Change Clock Master" command_group="7" para_num="1"
+            maindisplay="1" must_give="1">
+
+        <para index="1" name="clockMaster" description="Clock Master Of eNodeB" type="list" default='0'>
+            <list name='GPS' value='0'/>
+            <list name='1588' value='1'/>
+        </para>
+
+    </command>
+</macro>

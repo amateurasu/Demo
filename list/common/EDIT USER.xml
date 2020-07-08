@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="EDT USER" macro_code="3001" macro_name="Edit User" command_group="7" para_num="3"
+            maindisplay="1 2 3 4 5 6 9 12"
+            must_give="1" must_be_confirm="Are you sure you want to active a new software version?">
+        <para index="1" name="Username" id="Username" description="User Name" type="text">
+        </para>
+        <para index="2" name="Userdes" description="User Description" type="text">
+        </para>
+        <para index="3" name="Userpass" description="Password" type="password">
+        </para>
+        <para index="4" name="Confpass" description="Confirm Password" type="password">
+        </para>
+        <para index="5" name="Usergroup" description="User Group" multi_value="1" type="list">
+            <list name="ADMINISTRATOR" value="administrator" description="ADMINISTRATOR"/>
+            <list name="OPERATOR" value="operator" description="OPERATOR"/>
+            <list name="USER" value="user" description="USER"/>
+        </para>
+        <para index="6" name="Datelimit" description="Date Limit" type="list">
+            <list name="UNLIMIT" value="1" description="UNLIMIT"/>
+            <list name="LIMIT" value="2" description="LIMIT"/>
+            <child_select>
+                <value min="2" max="2"/>
+                <open index="7 8" must_give="7 8"/>
+            </child_select>
+        </para>
+        <para index="7" name="Startdate" description="Start Date" type="text">
+        </para>
+        <para index="8" name="Enddate" description="End Date" type="text">
+        </para>
+        <para index="9" name="Timelimit" description="Time Limit" type="list">
+            <list name="UNLIMIT" value="1" description="UNLIMIT"/>
+            <list name="LIMIT" value="2" description="LIMIT"/>
+            <child_select>
+                <value min="2" max="2"/>
+                <open index="10 11" must_give="10 11"/>
+            </child_select>
+        </para>
+        <para index="10" name="Starttime" description="Start Time" type="text">
+        </para>
+        <para index="11" name="Endtime" description="End Time" type="text">
+        </para>
+        <para index="12" name="Weeklimit" description="Week Limit" type="list">
+            <list name="UNLIMIT" value="1" description="UNLIMIT"/>
+            <list name="LIMIT" value="2" description="LIMIT"/>
+            <child_select>
+                <value min="2" max="2"/>
+                <open index="13" must_give="13"/>
+            </child_select>
+        </para>
+        <para index="13" name="WeeklySchedule" description="Weekly Schedule" type="text">
+            <range min="0" max="7"/>
+        </para>
+    </command>
+</macro>

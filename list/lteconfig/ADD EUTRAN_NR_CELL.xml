@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="ADD EUTRAN_NR_CELL" macro_code="3000" macro_name="Add Neighboring E-UTRAN Cell" command_group="7"
+            para_num="6" must_give="1 2 3 4 5 6 7"
+            maindisplay="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27">
+
+        <para index="1" name="CellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index='2' name='PLMNID' description='PLMNID' type='number'>
+            <range min='0' max='999999'/>
+        </para>
+
+        <para index='3' name='eNodeBId' description='eNodeBId' type='number'>
+            <range min='0' max='1048575'/>
+        </para>
+
+        <para index='4' name='LocalCellId' description='Local Cell Index' type='number'>
+            <range min='0' max='255'/>
+        </para>
+
+        <para index='5' name='EUTRACarrierARFCN' description='EUTRA Carrier ARFCN' type='number'>
+            <range min='0' max='65535'/>
+        </para>
+
+        <para index='6' name='PhyCellID' description='Physical Cell Index' type='number'>
+            <range min='0' max='504'/>
+        </para>
+
+        <para index='7' name='X_VENDOR_TAC' description='TAC' type='number'>
+            <range min='0' max='65535'/>
+        </para>
+
+        <para index='8' name='QOffset' description='QOffset' type='list' hidden_default='true' default='0'>
+            <list name="-24" value="-24"/>
+            <list name="-22" value="-22"/>
+            <list name="-20" value="-20"/>
+            <list name="-18" value="-18"/>
+            <list name="-16" value="-16"/>
+            <list name="-14" value="-14"/>
+            <list name="-12" value="-12"/>
+            <list name="-10" value="-10"/>
+            <list name="-8" value="-8"/>
+            <list name="-6" value="-6"/>
+            <list name="-5" value="-5"/>
+            <list name="-4" value="-4"/>
+            <list name="-3" value="-3"/>
+            <list name="-1" value="-1"/>
+            <list name="0" value="0"/>
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="3" value="3"/>
+            <list name="4" value="4"/>
+            <list name="5" value="5"/>
+            <list name="6" value="6"/>
+            <list name="8" value="8"/>
+            <list name="10" value="10"/>
+            <list name="12" value="12"/>
+            <list name="14" value="14"/>
+            <list name="16" value="16"/>
+            <list name="18" value="18"/>
+            <list name="20" value="20"/>
+            <list name="22" value="22"/>
+            <list name="24" value="24"/>
+        </para>
+
+        <para index='9' name='CIO' description='Cell Individual Offset' type='list' hidden_default='true' default='0'>
+            <list name="-24" value="-24"/>
+            <list name="-22" value="-22"/>
+            <list name="-20" value="-20"/>
+            <list name="-18" value="-18"/>
+            <list name="-16" value="-16"/>
+            <list name="-14" value="-14"/>
+            <list name="-12" value="-12"/>
+            <list name="-10" value="-10"/>
+            <list name="-8" value="-8"/>
+            <list name="-6" value="-6"/>
+            <list name="-4" value="-4"/>
+            <list name="-3" value="-3"/>
+            <list name="-1" value="-1"/>
+            <list name="0" value="0"/>
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="3" value="3"/>
+            <list name="4" value="4"/>
+            <list name="5" value="5"/>
+            <list name="6" value="6"/>
+            <list name="8" value="8"/>
+            <list name="10" value="10"/>
+            <list name="12" value="12"/>
+            <list name="14" value="14"/>
+            <list name="16" value="16"/>
+            <list name="18" value="18"/>
+            <list name="20" value="20"/>
+            <list name="22" value="22"/>
+            <list name="24" value="24"/>
+        </para>
+        <para index='10' name='RSTxPower' description='RSTxPower' type='number' hidden_default='true' default='0'>
+            <range min='-60' max='50'/>
+
+        </para>
+        <para index='11' name='Blacklisted' description='Blacklisted' type='list' hidden_default='true' default='0'>
+            <list name="FALSE" value="0"/>
+            <list name="TRUE" value="1"/>
+        </para>
+        <para index='12' name='X_VENDOR_RSRP' description='RSRP' type='number' hidden_default='true' default='1'>
+            <range min='0' max='97'/>
+        </para>
+        <para index='13' name='X_VENDOR_CSGID' description='CSGID' type='number' hidden_default='true' default='1'>
+            <range min='0' max='134217727'/>
+        </para>
+        <para index='14' name='X_VENDOR_NR_STATUS' description='NR Status' type='list' hidden_default='true'
+                default='2'>
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="255" value="255"/>
+        </para>
+        <para index='15' name='X_VENDOR_RSRQ' description='RSRQ' type='number' hidden_default='true' default='1'>
+            <range min='0' max='34'/>
+        </para>
+
+        <para index='16' name='X_VENDOR_BROADCAST_STATUS' description='Broadcast Status' type='list'
+                hidden_default='true' default='1'>
+            <list name="FALSE" value="0"/>
+            <list name="TRUE" value="1"/>
+        </para>
+        <para index='17' name='X_VENDOR_ACCESS_MODE' description='Access Mode' type='list' hidden_default='true'
+                default='2'>
+            <list name="0" value="0"/>
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="3" value="3"/>
+        </para>
+        <para index='18' name='X_VENDOR_PRACH_ROOT_SEQUENCE_INDEX' description='PRACH Root Sequence Index' type='number'
+                hidden_default='true' default='2'>
+            <range min='0' max='837'/>
+        </para>
+        <para index='19' name='X_VENDOR_PRACH_ZERO_CORRELATION_ZONE_CONFIG'
+                description='PRACH Zero Correlation Zone Config' type='number' hidden_default='true' default='2'>
+            <range min='0' max='15'/>
+        </para>
+        <para index='20' name='X_VENDOR_PRACH_HIGH_SPEED_FLAG' description='PRACH High Speed Flag' type='list'
+                hidden_default='true' default='0'>
+            <list name="FALSE" value="0"/>
+            <list name="TRUE" value="1"/>
+        </para>
+        <para index='21' name='X_VENDOR_PRACH_FREQUENCY_OFFSET' description='PRACH Frequency Offset' type='number'
+                hidden_default='true' default='2'>
+            <range min='0' max='94'/>
+        </para>
+        <para index='22' name='X_VENDOR_PRACH_CONFIGURATION_INDEX' description='PRACH Configuration Index' type='number'
+                hidden_default='true' default='2'>
+            <range min='0' max='63'/>
+        </para>
+        <para index='23' name='X_VENDOR_DAHO_INDICATION' description='DAHO Indication' type='list' hidden_default='true'
+                default='0'>
+            <list name="FALSE" value="0"/>
+            <list name="TRUE" value="1"/>
+        </para>
+        <para index='24' name='X_VENDOR_HO_STATUS' description='HO Status' type='list' hidden_default='true'
+                default='1'>
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="255" value="255"/>
+        </para>
+        <para index='25' name='X_VENDOR_INTERFERENCE_SCHEME' description='Interference Scheme' type='list'
+                hidden_default='true' default='2'>
+            <list name="0" value="0"/>
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+        </para>
+        <para index='26' name='X_VENDOR_MIN_ABS_USAGE_THRESHOLD' description='Min ABS Usage Threshold' type='number'
+                hidden_default='true' default='40'>
+            <range min='0' max='100'/>
+        </para>
+        <para index='27' name='X_VENDOR_MAX_ABS_USAGE_THRESHOLD' description='Max ABS Usage Threshold' type='number'
+                hidden_default='true' default='95'>
+            <range min='0' max='100'/>
+        </para>
+
+    </command>
+</macro>

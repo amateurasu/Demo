@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="ADD IP_ROUTE" macro_code="3000" macro_name="Add IP Path Route" command_group="7" para_num="3"
+            maindisplay="1 2 3" must_give="1 2 3">
+
+        <para index="1" name="desIp" description="Destination IP" type="text"
+                pattern="/^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/">
+        </para>
+
+        <para index="2" name="desMask" description="Destination subnet mask" type="text"
+                pattern="/^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/">
+        </para>
+
+        <para index="3" name="gateWay" description="Gateway" type="text"
+                pattern="/^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/">
+        </para>
+
+    </command>
+</macro>

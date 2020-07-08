@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="BACKUP VLAN_CONFIG" macro_code="3000" macro_name="Backup VLAN Config" command_group="7" para_num="0"
+            maindisplay="" must_give="">
+    </command>
+</macro>

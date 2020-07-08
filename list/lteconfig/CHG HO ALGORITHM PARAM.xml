@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG HO_ALGORITHM_PARAM" macro_code="3000" macro_name="Change Handover Algorithm Parameters"
+            command_group="7" para_num="6" must_give="1" maindisplay="1 2 3 4 5 6">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index='2' name='enb_measurements_for_ho' description='eNodeB Measurement For Handover' type='list'>
+            <list name='Disabled' value='0'/>
+            <list name='Enabled' value='1'/>
+        </para>
+        <para index='3' name='coverage_based_ho' description='Coverage Based Handover' type='number'>
+            <range min='0' max='255'/>
+        </para>
+        <para index='4' name='intra_freq_ho' description='Intra Frequency Handover' type='list'>
+            <list name='Disabled' value='0'/>
+            <list name='Enabled' value='1'/>
+        </para>
+        <para index='5' name='inter_freq_ho' description='Inter Frequency Handover' type='list'>
+            <list name='Disabled' value='0'/>
+            <list name='Enabled' value='1'/>
+        </para>
+        <para index='6' name='inter_rat_ho' description='Inter RAT Handover' type='list'>
+            <list name='UTRAN' value='0'/>
+            <list name='GERAN' value='1'/>
+            <list name='CDMA2000' value='2'/>
+        </para>
+    </command>
+</macro>

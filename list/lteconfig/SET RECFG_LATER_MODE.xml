@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SET RECFG_LATER_MODE" macro_code="3000" macro_name="Set Reconfig Later Mode" command_group="7"
+            para_num="0" maindisplay="" must_give="">
+    </command>
+</macro>

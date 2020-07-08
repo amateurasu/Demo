@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="ADD VLAN_ACCESS_LIST" macro_code="3000" macro_name="Add VLAN Access List" command_group="7"
+            para_num="3" maindisplay="1 2 3" must_give="1 2 3">
+
+        <para index="1" name="vlanName" description="Vlan Name" type="text" minlength="1" maxlength="63">
+        </para>
+
+        <para index="2" name="protocolNumber" description="Protocol" type='list' default='1'>
+            <list name='IPPROTO_AH' value='51'/>
+            <list name='IPPROTO_BEETPH' value='94'/>
+            <list name='IPPROTO_COMP' value='108'/>
+            <list name='IPPROTO_DCCP' value='33'/>
+            <list name='IPPROTO_EGP' value='8'/>
+            <list name='IPPROTO_ENCAP' value='98'/>
+            <list name='IPPROTO_ESP' value='50'/>
+            <list name='IPPROTO_GRE' value='47'/>
+            <list name='IPPROTO_ICMP' value='1'/>
+            <list name='IPPROTO_IDP' value='22'/>
+            <list name='IPPROTO_IGMP' value='2'/>
+            <list name='IPPROTO_IPIP' value='4'/>
+            <list name='IPPROTO_IPV6' value='41'/>
+            <list name='IPPROTO_MTP' value='92'/>
+            <list name='IPPROTO_PIM' value='103'/>
+            <list name='IPPROTO_PUP' value='12'/>
+            <list name='IPPROTO_RAW' value='255'/>
+            <list name='IPPROTO_RSVP' value='46'/>
+            <list name='IPPROTO_SCTP' value='132'/>
+            <list name='IPPROTO_TCP' value='6'/>
+            <list name='IPPROTO_TP' value='29'/>
+            <list name='IPPROTO_UDP' value='17'/>
+            <list name='IPPROTO_UDPLITE' value='136'/>
+
+        </para>
+
+        <para index="3" name="portNumber" description="Port Number" type='number' default='1'>
+            <range min='1' max='65535'/>
+        </para>
+
+    </command>
+</macro>

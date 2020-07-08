@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW CONNECTEDEUTRA" macro_code="3000" macro_name="Show LTE RAN Connected Mode EUTRA"
+            command_group="8" para_num="1" must_give="1" maindisplay="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+            <!-- <list name="All" value="all" description="All" /> -->
+        </para>
+        <!-- <para index="1" name="FilterCoefficientRSRP" description="Filter Coefficient RSRP" type="checkbox" >
+        </para>
+        <para index="2" name="FilterCoefficientRSRQ" description="Filter Coefficient RSRQ" type="checkbox" >
+        </para>
+        <para index="3" name="A1ThresholdRSRP" description="A1 Threshold RSRP" type="checkbox" >
+        </para>
+        <para index="4" name="A1ThresholdRSRQ" description="A1 Threshold RSRQ" type="checkbox" >
+        </para>
+        <para index="5" name="A2ThresholdRSRP" description="A2 Threshold RSRP" type="checkbox" >
+        </para>
+        <para index="6" name="A2ThresholdRSRQ" description="A2 Threshold RSRQ" type="checkbox" >
+        </para>
+        <para index="7" name="A3Offset" description="A2 Offset" type="checkbox" >
+        </para>
+        <para index="8" name="ReportOnLeave" description="Report On Leave" type="checkbox">
+        </para>
+        <para index="9" name="A4ThresholdRSRP" description="A4 Threshold RSRP" type="checkbox" >
+        </para>
+        <para index="10" name="A4ThresholdRSRQ" description="A4 Threshold RSRQ" type="checkbox" >
+        </para>
+        <para index="11" name="A5Threshold1RSRP" description="A5 Threshold 1 RSRP" type="checkbox" >
+        </para>
+        <para index="12" name="A5Threshold1RSRQ" description="A5 Threshold 1 RSRQ" type="checkbox" >
+        </para>
+        <para index="13" name="A5Threshold2RSRP" description="A5 Threshold 2 RSRP" type="checkbox" >
+        </para>
+        <para index="14" name="A5Threshold2RSRP" description="A5 Threshold 2 RSRQ" type="checkbox" >
+        </para>
+        <para index="15" name="Hysteresis" description="Hysteresis" type="checkbox" >
+        </para>
+        <para index="16" name="TimeToTrigger" description="Time To Trigger" type="checkbox" >
+        </para>
+        <para index="17" name="TriggerQuantity" description="Trigger Quantity" type="checkbox" >
+        </para>
+        <para index="18" name="ReportQuantity" description="Report Quantity" type="checkbox" >
+        </para>
+        <para index="19" name="ReportInterval" description="Report Interval" type="checkbox" >
+        </para> -->
+    </command>
+</macro>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG QCI_CONFIG" macro_code="3000" macro_name="Change QCI Configuration" command_group="7"
+            para_num="8" maindisplay="1 2 3 4" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="QCI" description="QoS Class Indication" type="list">
+            <list name="QCI 1" value="0"/>
+            <list name="QCI 2" value="1"/>
+            <list name="QCI 3" value="2"/>
+            <list name="QCI 4" value="3"/>
+            <list name="QCI 5" value="4"/>
+            <list name="QCI 6" value="5"/>
+            <list name="QCI 7" value="6"/>
+            <list name="QCI 8" value="7"/>
+            <list name="QCI 9" value="8"/>
+        </para>
+        <para index="3" name="DL_QOS_MINBR" description="Downlink Minimum Qos Bit Rate(kbit/s)" type="number">
+            <range min="0" max="2000000"/>
+        </para>
+        <para index="4" name="UL_QOS_MINBR" description="Uplink Minimum Qos Bit Rate(kbit/s)" type="number">
+            <range min="0" max="1000000"/>
+        </para>
+
+    </command>
+</macro>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="ADD EVENT" macro_code="3001" macro_name="Add Supported Event" command_group="7" para_num="3"
+            maindisplay="1 2 3 4 5" must_give="1 2 3 4">
+        <para index='1' name='EventCode' type='number' description='Event Code'>
+            <range min="0" max="9999999"/>
+        </para>
+        <para index='2' name='EventName' type='text' minlength="1" maxlength="128" description='Event Name'>
+        </para>
+        <para index='3' name='EventType' type='text' minlength="1" maxlength="128" description='Event Type'>
+        </para>
+
+        <para index='4' name='Severity' type='list' description='Severity'>
+            <list name="Critical" value="0"/>
+            <list name="Major" value="1"/>
+            <list name="Minor" value="2"/>
+            <list name="Warning" value="3"/>
+        </para>
+
+        <para index='5' name='ManagedObjectInstance' type='text' minlength="0" maxlength="128"
+                description='Managed Object Instance'>
+        </para>
+    </command>
+</macro>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG SON OAM ARN NEIGHBOR" macro_code="3000" macro_name="Change SON OAM ARN Neighbor"
+            command_group="7" para_num="4" must_give="" maindisplay="1 2 3 4">
+        <para index="1" name="x2_status" description="X2 Status" type="number">
+            <range min="1" max="7"/>
+        </para>
+    </command>
+</macro>

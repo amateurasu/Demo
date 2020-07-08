@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG UL_PWR_CTRL_DELICATED" macro_code="3000" macro_name="Change Uplink Power Control Delicated"
+            command_group="7" para_num="6" must_give="1" maindisplay="1 2 3 4">
+
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index='2' name='p0_ue_pusch' description='P0 UE PUSCH' type='number'>
+            <range min='-8' max='7'/>
+        </para>
+        <para index='3' name='p0_ue_pucch' description='P0 UE PUCCH' type='number'>
+            <range min='-8' max='7'/>
+        </para>
+        <para index='4' name='filter_coefficient' description='Filter Coefficient' type='number'>
+            <range min='0' max='14'/>
+        </para>
+
+        <para index='5' name='p_srs_offset' description='PSRS Offset' type='number'>
+            <range min='0' max='15'/>
+        </para>
+
+    </command>
+</macro>

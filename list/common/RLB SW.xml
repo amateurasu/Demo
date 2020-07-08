@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="RLB SW" macro_code="3001" macro_name="Rollback Software " command_group="7" para_num="3"
+            maindisplay="1"
+            must_give="1">
+        <para index="1" name="cardType" description="Card Type" type="list">
+            <list name="CTC" value="1" description="CTC"/>
+            <list name="BBC" value="2" description="BBC"/>
+            <list name="RRU" value="3" description="RRU"/>
+            <list name="SYS" value="4" description="SYS"/>
+            <child_select>
+                <value min="2" max="2"/>
+                <open index="2" must_give=""/>
+            </child_select>
+
+            <child_select>
+                <value min="3" max="3"/>
+                <open index="3 4" must_give=""/>
+            </child_select>
+
+        </para>
+        <para index="2" name="BbcNum" description="BBC Number" type="list">
+            <list name="BBC1" value="1" description="BBC1"/>
+            <list name="BBC2" value="2" description="BBC2"/>
+            <list name="BBC3" value="3" description="BBC3"/>
+            <list name="ALL" value="4" description="ALL"/>
+
+        </para>
+
+        <para index="3" name="BbcNum" description="Connected BBC Number" type="list">
+            <list name="BBC1" value="1" description="BBC1"/>
+            <list name="BBC2" value="2" description="BBC2"/>
+            <list name="BBC3" value="3" description="BBC3"/>
+            <list name="ALL" value="4" description="ALL"/>
+
+        </para>
+        <para index="4" name="PortNum" description="Connected BBC CPRI Port Number" type="number">
+            <range min="0" max="7"/>
+        </para>
+    </command>
+</macro>

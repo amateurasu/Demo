@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG PHYSICAL_INTERFACE_STATE" macro_code="3000" macro_name="Change Physical Interface State"
+            command_group="7" para_num="2" maindisplay="1 2" must_give="1 2">
+
+        <para index="1" name="interface" description="Physical Interface of Vlan" type="list">
+            <list name='FE1/GE1' value='fm1-mac3'/>
+            <list name='FE0/GE0/LMT' value='fm1-mac4'/>
+            <list name='SFP1' value='fm1-mac9'/>
+            <list name='SFP0' value='fm1-mac10'/>
+            <list name='BackPlane To BBC1' value='fm1-mac1'/>
+            <list name='BackPlane To BBC2' value='fm1-mac2'/>
+            <list name='BackPlane To BBC3' value='fm1-mac5'/>
+        </para>
+
+        <para index="2" name="adminState" description="Administrative State" type="list">
+            <list name='Admin Down' value='0'/>
+            <list name='Admin Up' value='1'/>
+        </para>
+
+    </command>
+</macro>

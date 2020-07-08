@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="RMV VLAN_DATA_FLOW" macro_code="3000" macro_name="Remove VLAN Data Flow" command_group="7"
+            para_num="2" maindisplay="1 2" must_give="1 2">
+
+        <para index="1" name="vlanName" description="Vlan Name" type="text" minlength="1" maxlength="63">
+        </para>
+
+        <para index="2" name="dataFlow" description="Data Flow" type='list' default='0'>
+            <list name='USER PLANE' value='0'/>
+            <list name='CONTROL PLANE' value='1'/>
+            <list name='MANAGEMENT PLANE' value='2'/>
+            <list name='SYNC PLANE' value='3'/>
+        </para>
+    </command>
+</macro>

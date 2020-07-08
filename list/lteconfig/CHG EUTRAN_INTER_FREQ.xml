@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG EUTRAN_INTER_FREQ" macro_code="3000" macro_name="Change E-UTRAN Inter Frequency"
+            command_group="7" para_num="18" must_give="1 2" maindisplay="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18">
+
+        <para index="1" name="CellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index='2' name='EUTRACarrierARFCN' description='EUTRAN Carrier ARFCN' type='number'>
+            <range min='0' max='65535'/>
+        </para>
+
+        <para index='3' name='X_VENDOR_MEAS_BANDWIDTH_FOR_EARFCN' description='X_VENDOR_MEAS_BANDWIDTH_FOR_EARFCN'
+                type='list' newline='1'>
+
+            <list name="BW6" value="BW6"/>
+            <list name="BW15" value="BW15"/>
+            <list name="BW25" value="BW25"/>
+            <list name="BW50" value="BW50"/>
+            <list name="BW75" value="BW75"/>
+            <list name="BW100" value="BW100"/>
+
+        </para>
+
+        <para index='4' name='QOffsetFreq' description='QOffsetFreq' type='list'>
+            <list name="-24" value="-24"/>
+            <list name="-22" value="-22"/>
+            <list name="-20" value="-20"/>
+            <list name="-18" value="-18"/>
+            <list name="-16" value="-16"/>
+            <list name="-14" value="-14"/>
+            <list name="-12" value="-12"/>
+            <list name="-10" value="-10"/>
+            <list name="-8" value="-8"/>
+            <list name="-6" value="-6"/>
+            <list name="-5" value="-5"/>
+            <list name="-4" value="-4"/>
+            <list name="-2" value="-2"/>
+            <list name="-3" value="-3"/>
+            <list name="-2" value="-2"/>
+            <list name="-1" value="-1"/>
+            <list name="0" value="0"/>
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="3" value="3"/>
+            <list name="4" value="4"/>
+            <list name="5" value="5"/>
+            <list name="6" value="6"/>
+            <list name="8" value="8"/>
+            <list name="10" value="10"/>
+            <list name="12" value="12"/>
+            <list name="14" value="14"/>
+            <list name="16" value="16"/>
+            <list name="18" value="18"/>
+            <list name="20" value="20"/>
+            <list name="22" value="22"/>
+            <list name="24" value="24"/>
+
+        </para>
+
+        <para index='5' name='X_VENDOR_PRESENCE_ANTENNA_PORT1' description='X_VENDOR_PRESENCE_ANTENNA_PORT1' type='list'
+                newline='1'>
+            <list name="TRUE" value="1"/>
+            <list name="FALSE" value="0"/>
+        </para>
+
+        <para index='6' name='QRxLevMinSIB5' description='QRxLevMinSIB5' type='number'>
+            <range min='-70' max='-22'/>
+        </para>
+
+        <para index='7' name='X_VENDOR_NEIGHBOR_CELL_CONFIG' description='X_VENDOR_NEIGHBOR_CELL_CONFIG' type='number'>
+            <range min='0' max='3'/>
+        </para>
+
+        <para index='8' name='X_VENDOR_THRESHX_HIGHQ_R9' description='X_VENDOR_THRESHX_HIGHQ_R9' type='number'>
+            <range min='0' max='31'/>
+        </para>
+
+        <para index='9' name='TReselectionEUTRA' description='TReselectionEUTRA' type='number'>
+            <range min='0' max='7'/>
+        </para>
+        <para index='10' name='TReselectionEUTRASFMedium' description='TReselectionEUTRASFMedium' type='list'>
+            <list name="25" value="25"/>
+            <list name="50" value="50"/>
+            <list name="75" value="75"/>
+            <list name="100" value="100"/>
+        </para>
+        <para index='11' name='TReselectionEUTRASFHigh' description='TReselectionEUTRASFHigh' type='list'>
+            <list name="25" value="25"/>
+            <list name="50" value="50"/>
+            <list name="75" value="75"/>
+            <list name="100" value="100"/>
+        </para>
+        <para index='12' name='ThreshXHigh' description='ThreshXHigh' type='number'>
+            <range min='0' max='31'/>
+        </para>
+        <para index='13' name='ThreshXLow' description='ThreshXLow' type='number'>
+            <range min='0' max='31'/>
+        </para>
+        <para index='14' name='CellReselectionPriority' description='Cell Reselection Priority' type='number'>
+            <range min='0' max='7'/>
+        </para>
+        <para index='15' name='X_VENDOR_Q_QUAL_MIN_R9' description='X_VENDOR_Q_QUAL_MIN_R9' type='number'>
+            <range min='-34' max='-3'/>
+        </para>
+
+        <para index='16' name='PMax' description='PMax' type='number'>
+            <range min='-30' max='33'/>
+        </para>
+
+        <para index='17' name='X_VENDOR_CM_OFFSET_FREQ' description='X_VENDOR_CM_OFFSET_FREQ' type='list'>
+            <list name="-24" value="-24"/>
+            <list name="-22" value="-22"/>
+            <list name="-20" value="-20"/>
+            <list name="-18" value="-18"/>
+            <list name="-16" value="-16"/>
+            <list name="-14" value="-14"/>
+            <list name="-12" value="-12"/>
+            <list name="-10" value="-10"/>
+            <list name="-8" value="-8"/>
+            <list name="-6" value="-6"/>
+            <list name="-5" value="-5"/>
+            <list name="-4" value="-4"/>
+            <list name="-3" value="-3"/>
+            <list name="-2" value="-2"/>
+            <list name="-1" value="-1"/>
+            <list name="0" value="0"/>
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="3" value="3"/>
+            <list name="4" value="4"/>
+            <list name="5" value="5"/>
+            <list name="6" value="6"/>
+            <list name="8" value="8"/>
+            <list name="10" value="10"/>
+            <list name="12" value="12"/>
+            <list name="14" value="14"/>
+            <list name="16" value="16"/>
+            <list name="18" value="18"/>
+            <list name="20" value="20"/>
+            <list name="22" value="22"/>
+            <list name="24" value="24"/>
+        </para>
+
+        <para index='18' name='X_VENDOR_THRESHX_LOWQ_R9' description='X_VENDOR_THRESHX_LOWQ_R9' type='number'>
+            <range min='0' max='31'/>
+        </para>
+
+    </command>
+</macro>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG SPID_TABLE_CONF" macro_code="3000" macro_name="Change SPID Table Configuration" command_group="7"
+            para_num="6" must_give="1 2" maindisplay="1 2 3 4 5 6">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index='2' name='spid' description='SPID' type='number' parentAttr='1'>
+            <range min='1' max='256'/>
+        </para>
+
+        <para index='3' name='eutran_freq_prirority_info' description='EUTRAN Frequency Priority Information'
+                type='list'>
+            <list value='0' name='High'/>
+            <list value='1' name='Medium'/>
+            <list value='2' name='Low'/>
+            <list value='3' name='Lowest'/>
+        </para>
+        <para index='4' name='utran_freq_prirority_info' description='UTRAN Frequency Priority Information' type='list'>
+            <list value='0' name='High'/>
+            <list value='1' name='Medium'/>
+            <list value='2' name='Low'/>
+            <list value='3' name='Lowest'/>
+        </para>
+        <para index='5' name='geran_freq_prirority_info' description='GERAN Frequency Priority Information' type='list'>
+            <list value='0' name='High'/>
+            <list value='1' name='Medium'/>
+            <list value='2' name='Low'/>
+            <list value='3' name='Lowest'/>
+        </para>
+        <para index='6' name='cdma_freq_prirority_info' description='CDMA Frequency Priority Information' type='list'>
+            <list value='0' name='High'/>
+            <list value='1' name='Medium'/>
+            <list value='2' name='Low'/>
+            <list value='3' name='Lowest'/>
+        </para>
+    </command>
+</macro>

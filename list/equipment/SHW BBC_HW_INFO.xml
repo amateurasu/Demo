@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW BBC_HW_INFO" macro_code="3000" macro_name="Show BBC Hardware Info" command_group="7" para_num="3"
+            maindisplay="1 2 3" must_give="1 2 3">
+
+        <para index="1" name="RackNumber" description="Rack Number" type="list" default="0">
+            <list name='0' value='0'/>
+            <list name='1' value='1'/>
+            <list name='2' value='2'/>
+            <list name='3' value='3'/>
+        </para>
+        <para index="2" name="SubRackNumber" description="Subrack Number" type="list" default="0">
+            <list name='0' value='0'/>
+            <list name='1' value='1'/>
+            <list name='2' value='2'/>
+            <list name='3' value='3'/>
+        </para>
+        <para index="3" name="SlotNumber" description="BBC" type="list">
+            <list name='BBC1' value='2'/>
+            <list name='BBC2' value='3'/>
+            <list name='BBC3' value='4'/>
+        </para>
+    </command>
+</macro>

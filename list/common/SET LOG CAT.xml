@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SET_LOG_CAT" macro_code="3002" macro_name="Set ON/OFF Log Category" command_group="7" para_num="3"
+            maindisplay="1"
+
+            must_give="1 2 3">
+        <para index="1" name="module" description="Log Module" multi_value="1" type="list">
+            <list name="MAC" value="MAC" description="MAC"/>
+            <list name="RLC" value="RLC" description="RLC"/>
+            <list name="PDCP" value="PDCP" description="PDCP"/>
+        </para>
+
+        <para index="2" name="category" description="log category" type="list">
+            <list name="ALL" value="ALL" description="ALL"/>
+
+        </para>
+
+        <para index="3" name="switch" description="ON/OFF state of logging" type="list">
+            <list name="ON" value="ON" description="ON"/>
+            <list name="OFF" value="OFF" description="OFF"/>
+        </para>
+
+    </command>
+</macro>

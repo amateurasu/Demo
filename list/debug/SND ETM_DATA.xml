@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SND ETM_DATA" macro_code="3000" macro_name="Send ETM Data" command_group="8" para_num="1"
+            maindisplay="1 2" must_give="1 2">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1" default='0'>
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="etmMode" description="ETM Mode" type="list" multi-value="1" default='1'>
+            <list name="ETM 1.1" value="1" description="ETM 1.1"/>
+            <list name="ETM 1.2" value="2" description="ETM 1.2"/>
+            <list name="ETM 2.0" value="3" description="ETM 2.0"/>
+            <list name="ETM 3.1" value="4" description="ETM 3.1"/>
+            <list name="ETM 3.2" value="5" description="ETM 3.2"/>
+            <list name="ETM 3.3" value="6" description="ETM 3.3"/>
+        </para>
+    </command>
+</macro>

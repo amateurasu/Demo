@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG RLC_SRB2" macro_code="3000" macro_name="Change LTE RAN RLC SRB2" command_group="7" para_num="8"
+            maindisplay="1 2 3 4 5 6 7 8" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="DefaultConfiguration" description="Default Configuration" type="list">
+            <list name="Use Configuration provided by UE for SRB" value="0"/>
+            <list name="Use Default RLC Configuration for SRB" value="1"/>
+        </para>
+        <para index="3" name="TPollRetransmit" description="Timer Poll Retransmit" type="number" pattern='/0$|5$/g'>
+            <range min="5" max="500"/>
+        </para>
+        <para index="4" name="PollPDU" description="Poll PDU" type="list">
+            <list name="0" value="0"/>
+            <list name="4" value="4"/>
+            <list name="8" value="8"/>
+            <list name="16" value="16"/>
+            <list name="32" value="32"/>
+            <list name="64" value="64"/>
+            <list name="128" value="128"/>
+            <list name="256" value="256"/>
+        </para>
+        <para index="5" name="PollByte" description="Poll Byte" type="list">
+            <list name="0" value="0"/>
+            <list name="25" value="25"/>
+            <list name="50" value="50"/>
+            <list name="75" value="75"/>
+            <list name="100" value="100"/>
+            <list name="125" value="125"/>
+            <list name="250" value="250"/>
+            <list name="375" value="375"/>
+            <list name="500" value="500"/>
+            <list name="750" value="750"/>
+            <list name="1000" value="1000"/>
+            <list name="1250" value="1250"/>
+            <list name="1500" value="1500"/>
+            <list name="2000" value="2000"/>
+            <list name="3000" value="3000"/>
+        </para>
+        <para index="6" name="MaxRetxThreshold" description="Max Retx Threshold" type="list">
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="3" value="3"/>
+            <list name="4" value="4"/>
+            <list name="6" value="6"/>
+            <list name="8" value="8"/>
+            <list name="16" value="16"/>
+            <list name="32" value="32"/>
+        </para>
+        <para index="7" name="TReordering" description="Timer Reordering" type="number" pattern='/0$|5$/g'>
+            <range min="0" max="200"/>
+        </para>
+        <para index="8" name="TStatusProhibit" description="Timer Status Prohibit" type="number" pattern='/0$|5$/g'>
+            <range min="0" max="500"/>
+        </para>
+    </command>
+</macro>

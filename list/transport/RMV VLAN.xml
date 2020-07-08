@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="RMV VLAN" macro_code="3000" macro_name="Remove VLAN" command_group="7" para_num="1" maindisplay="1"
+            must_give="1">
+
+        <para index="1" name="vlanName" description="Vlan Name" type="text" minlength="1" maxlength="63">
+        </para>
+
+    </command>
+</macro>

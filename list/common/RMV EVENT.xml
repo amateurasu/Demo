@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="RMV EVENT" macro_code="3001" macro_name="Remove Event" command_group="7" para_num="3" maindisplay="1"
+            must_give="1">
+        <para index='1' name='EventCode' type='number' description='Event Code'>
+            <range min="0" max="9999999"/>
+        </para>
+    </command>
+</macro>

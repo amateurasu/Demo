@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW IP_ROUTE" macro_code="3000" macro_name="Show IP Path Route" command_group="7" para_num="0"
+            maindisplay="1" must_give="0">
+
+    </command>
+</macro>

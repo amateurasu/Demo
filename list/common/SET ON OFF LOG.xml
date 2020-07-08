@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SET_ON_OFF_LOG" macro_code="3004" macro_name="Set ON/OFF Log" command_group="7" para_num="3"
+            maindisplay="1"
+
+            must_give="1 2 3">
+        <para index="1" name="module" description="Log Module" multi_value="1" type="list">
+            <list name="RLC" value="RLC" description="RLC"/>
+            <list name="RRM" value="RRM" description="RRM"/>
+            <list name="SON" value="SON" description="SON"/>
+        </para>
+        <para index="2" name="lever" description="log lever" type="list">
+            <list name="CRITICAL" value="0" description="CRITICAL"/>
+            <list name="ERROR" value="1" description="ERROR"/>
+            <list name="WARNING" value="2" description="WARNING"/>
+            <list name="INFO" value="3" description="INFO"/>
+            <list name="DETAILED" value="4" description="DETAILED"/>
+        </para>
+        <para index="3" name="switch" description="ON/OFF state of logging" type="list">
+            <list name="ON" value="ON" description="ON"/>
+            <list name="OFF" value="OFF" description="OFF"/>
+        </para>
+
+    </command>
+</macro>

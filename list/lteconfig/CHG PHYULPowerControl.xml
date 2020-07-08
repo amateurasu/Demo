@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG PHYULPOWERCONTROL" macro_code="3000" macro_name="Change LTE RAN PHYULPowerControl"
+            command_group="7" para_num="5" maindisplay="1 2 3 4 5 6 7 8 9 10 11 12" must_give="1">
+
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="Alpha" description="Alpha" type="list">
+            <list name="0%" value="0" description="25"/>
+            <list name="40%" value="40" description="40"/>
+            <list name="50%" value="50" description="50"/>
+            <list name="60%" value="60" description="60"/>
+            <list name="70%" value="70" description="70"/>
+            <list name="80%" value="80" description="80"/>
+            <list name="90%" value="90" description="90"/>
+            <list name="100%" value="100" description="100"/>
+        </para>
+        <para index="3" name="DeltaFPUCCHFormat1" description="DeltaFPUCCHFormat1" type="list">
+            <list name="-2" value="-2" description="-2"/>
+            <list name="0" value="0" description="0"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="4" name="DeltaFPUCCHFormat1b" description="DeltaFPUCCHFormat1b" type="list">
+            <list name="1" value="1" description="1"/>
+            <list name="3" value="3" description="3"/>
+            <list name="5" value="5" description="5"/>
+        </para>
+        <para index="5" name="DeltaFPUCCHFormat2" description="DeltaFPUCCHFormat2" type="list">
+            <list name="-2" value="-2" description="-2"/>
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="6" name="DeltaFPUCCHFormat2a" description="DeltaFPUCCHFormat2a" type="list">
+            <list name="-2" value="-2" description="-2"/>
+            <list name="0" value="0" description="0"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="7" name="DeltaFPUCCHFormat2b" description="DeltaFPUCCHFormat2b" type="list">
+            <list name="-2" value="-2" description="-2"/>
+            <list name="0" value="0" description="0"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="8" name="DeltaPreambleMsg3" description="DeltaPreambleMsg3" type="list">
+            <list name="-1" value="-1" description="-1"/>
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+            <list name="3" value="3" description="3"/>
+            <list name="4" value="4" description="4"/>
+            <list name="5" value="5" description="5"/>
+            <list name="6" value="6" description="6"/>
+        </para>
+        <para index="9" name="P0NominalPUCCH" description="P0NominalPUCCH" type="number">
+            <range min="-126" max="-96"/>
+        </para>
+        <para index="10" name="P0NominalPUSCH" description="P0NominalPUSCH" type="number">
+            <range min="-126" max="24"/>
+        </para>
+
+        <para index="11" name="X_VENDOR_DELTAF_PUCCH_FORMAT1BCS_R10" description="DELTAF_PUCCH_FORMAT1BCS_R10"
+                type="list">
+
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+
+        </para>
+
+        <para index="12" name="X_VENDOR_DELTAF_PUCCH_FORMAT3_R10" description="DELTAF_PUCCH_FORMAT3_R10" type="list">
+            <list name="-1" value="-1" description="-1"/>
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+            <list name="3" value="3" description="3"/>
+            <list name="4" value="4" description="4"/>
+            <list name="5" value="5" description="5"/>
+            <list name="6" value="6" description="6"/>
+        </para>
+
+    </command>
+</macro>

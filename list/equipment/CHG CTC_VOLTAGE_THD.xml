@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG CTC_VOLTAGE_THD" macro_code="3000" macro_name="Change CTC Voltage Threshold" command_group="7"
+            para_num="13" maindisplay="1 2 3 4 5 6 7 8 9 10 11 12 13" must_give="1 2 3">
+
+        <para index="1" name="RackNumber" description="Rack Number" type="list" default="0">
+            <list name='0' value='0'/>
+            <list name='1' value='1'/>
+            <list name='2' value='2'/>
+            <list name='3' value='3'/>
+        </para>
+        <para index="2" name="SubRackNumber" description="Subrack Number" type="list" default="0">
+            <list name='0' value='0'/>
+            <list name='1' value='1'/>
+            <list name='2' value='2'/>
+            <list name='3' value='3'/>
+        </para>
+        <para index="3" name="SlotNumber" description="CTC" type="list" default="0">
+            <list name='CTC1' value='0'/>
+            <list name='CTC2' value='1'/>
+        </para>
+        <para index="4" name="Volt675mVUpperThd" description="675mV Upper Threshold" type="number">
+            <range min="675" max="850"/>
+        </para>
+        <para index="5" name="Volt675mVUnderThd" description="675mV Under Threshold" type="number">
+            <range min="500" max="675"/>
+        </para>
+        <para index="6" name="Volt1350mVUpperThd" description="1350mV Upper Threshold" type="number">
+            <range min="1350" max="1600"/>
+        </para>
+        <para index="7" name="Volt1350mVUnderThd" description="1350mV Under Threshold" type="number">
+            <range min="1000" max="1350"/>
+        </para>
+        <para index="8" name="Volt3300mVUpperThd" description="3300mV Upper Threshold" type="number">
+            <range min="3300" max="4500"/>
+        </para>
+        <para index="9" name="Volt3300mVUnderThd" description="3300mV Under Threshold" type="number">
+            <range min="2500" max="3300"/>
+        </para>
+        <para index="12" name="Volt1000mVUpperThd" description="1000mV Upper Threshold" type="number">
+            <range min="1000" max="1400"/>
+        </para>
+        <para index="13" name="Volt1000mVUnderThd" description="1000mV Under Threshold" type="number">
+            <range min="600" max="1000"/>
+        </para>
+    </command>
+</macro>

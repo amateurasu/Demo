@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW CARD_STATUS" macro_code="3000" macro_name="Show Card Status" command_group="7" para_num="0"
+            maindisplay="" must_give="">
+
+    </command>
+</macro>

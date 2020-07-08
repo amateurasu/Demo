@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="ADD USER" macro_code="3001" macro_name="Add User" command_group="7" para_num="3"
+            maindisplay="1 2 3 4"
+            must_give="1 2 3 4">
+        <para index="1" name="username" description="User Name" minlength='5' maxlength='60' type="text">
+        </para>
+        <para index="2" name="password" description="Password" type="password" minlength='6' maxlength='60'>
+        </para>
+        <para index="3" name="role" description="Role" multi_value="1" type="list" default="1">
+            <list name="Administrator" value="0"/>
+            <list name="Operator" value="1"/>
+        </para>
+        <para index='4' name='status' description='Status' type='list' default='1'>
+            <list name='Not active' value='0'/>
+            <list name='Active' value='1'/>
+        </para>
+    </command>
+</macro>

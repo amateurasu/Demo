@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG OBJ_ALM_RPT" macro_code="3001" macro_name="Change Alarm Reporting Mechanism By Object"
+            command_group="7" para_num="2" maindisplay="1 7 8" must_give="1 7 8">
+
+        <para index='1' name='ObjType' type='list' description='Object Type'>
+
+            <list name='CTC' value='0'/>
+            <list name='BBC' value='1'/>
+            <list name='RRU' value='2'/>
+
+            <child_select>
+                <value min="1" max="1"/>
+                <open index="4" must_give=""/>
+            </child_select>
+
+            <child_select>
+                <value min="2" max="2"/>
+                <open index="5 6" must_give=""/>
+            </child_select>
+
+        </para>
+
+        <para index="4" name="SlotNumber" description="BBC" type="list" default="2">
+            <list name='BBC1' value='2'/>
+            <list name='BBC2' value='3'/>
+            <list name='BBC3' value='4'/>
+        </para>
+
+        <para index="5" name="SlotNumber" description="Connected BBC Number" type="list" default="2">
+            <list name='BBC1' value='2'/>
+            <list name='BBC2' value='3'/>
+            <list name='BBC3' value='4'/>
+        </para>
+        <para index="6" name="PortNumber" description="Connected CPRI Port Number" type="list" default="0">
+            <list name='0' value='0'/>
+            <list name='1' value='1'/>
+        </para>
+
+        <para index='7' name='Type' type='list' description='Alarm ID Select Type'>
+            <list name="All Alarm Id" value="0"/>
+            <list name="One Alarm Id" value="1"/>
+
+            <child_select>
+                <value min="1" max="1"/>
+                <open index="9" must_give=""/>
+            </child_select>
+
+        </para>
+
+        <para index='8' name='ReportingMechanism' type='list' description='Reporting Mechanism'>
+            <list name='Expedited' value='0'/>
+            <list name='Disabled' value='3'/>
+        </para>
+
+        <para index="9" name="AlarmCode" description="Alarm Code" type="number">
+            <range min="0" max="9999999"/>
+        </para>
+
+    </command>
+</macro>

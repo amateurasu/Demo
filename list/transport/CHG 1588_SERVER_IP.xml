@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG 1588_SERVER_IP" macro_code="3000" macro_name="Change 1588 Server IP" command_group="7"
+            para_num="3" maindisplay="1 2 3" must_give="1 2 3">
+
+        <para index="1" name="ipAddress" description="Clock Server IP address" type="ipaddress"
+                pattern="/^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/">
+        </para>
+
+        <para index="2" name="physicalInterface" description="1588 Ethernet Port" type="list" default='fm1-mac3'>
+            <list name='FE1/GE1' value='fm1-mac3'/>
+            <list name='SFP1' value='fm1-mac9'/>
+            <list name='SFP0' value='fm1-mac10'/>
+            <list name='FE0/GE0' value='fm1-mac4'/>
+        </para>
+
+        <para index="3" name="transportInterface" description="1588 Transport Interface" type="text" minlength="1"
+                maxlength="63">
+        </para>
+
+    </command>
+</macro>

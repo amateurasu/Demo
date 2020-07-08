@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG ACMAN" macro_code="3000" macro_name="Change LTE Access Management" command_group="7" para_num="4"
+            maindisplay="1 2 3 4" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="X_VENDOR_ACCESSMODE" description="Access Mode" multi_value="1" type="list">
+            <list name="Closed Access" value="Closed Access" description="Closed Access"/>
+            <list name="Hybrid Access" value="Hybrid Access" description="Hybrid Access"/>
+            <list name="Open Access" value="Open Access" description="Open Access"/>
+        </para>
+        <para index="3" name="X_VENDOR_MAX_CSG_MEMBERS" description="Max CSG Members" type="number">
+            <range min='0' max='255'/>
+        </para>
+        <para index="4" name="X_VENDOR_MAX_NON_CSG_MEMBERS" description="Max Non CSG Members" type="number">
+            <range min='0' max='255'/>
+        </para>
+    </command>
+</macro>

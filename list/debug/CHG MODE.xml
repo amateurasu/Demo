@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG MODE" macro_code="3000" macro_name="Change Test Mode" command_group="7" para_num="3"
+            maindisplay="1 2" must_give="1 2">
+
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index="2" name="mode" description="Mode" type="list">
+            <list name="NORMAL" value="0" description="NORMAL"/>
+            <list name="CPRI LOOPBACK" value="1" description="CPRI LOOPBACK"/>
+            <list name="ETM MODE" value="2" description="ETM MODE"/>
+
+            <child_select>
+                <value min="2" max="2"/>
+                <open index="3" must_give=""/>
+            </child_select>
+
+        </para>
+
+        <para index="3" name="bandWidth" description="Bandwidth" type="list">
+            <list name="1.4" value="0" description="1.4 MB"/>
+            <list name="3" value="1" description="3 MB"/>
+            <list name="5" value="2" description="5 MB"/>
+            <list name="10" value="3" description="10 MB"/>
+            <list name="15" value="4" description="15 MB"/>
+            <list name="20" value="5" description="20 MB"/>
+        </para>
+
+    </command>
+</macro>

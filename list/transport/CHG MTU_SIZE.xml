@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG MTU_SIZE" macro_code="3000" macro_name="Change MTU size" command_group="7" para_num="2"
+            maindisplay="1" must_give="1">
+
+        <para index='1' name='MTU' description='MTU size' type='number'>
+            <range min='1500' max='9000'/>
+        </para>
+    </command>
+</macro>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG RRC_LLIM_TIMER" macro_code="3000" macro_name="Change RRC LLIM Timers Parameters"
+            command_group="7" para_num="4" must_give="" maindisplay="1 2 3 4">
+
+        <para index="1" name="LLIM_CELL_SUSPEND_UE_ENTITY_TIMER_TIMERID_27_VALUE"
+                description="LLIM_CELL_SUSPEND_UE_ENTITY_TIMER" type="number">
+            <range min="50" max="65535"/>
+
+        </para>
+        <para index="2" name="LLIM_REESTABLISH_UE_ENTITY_TIMER_TIMERID_28_VALUE"
+                description="LLIM_REESTABLISH_UE_ENTITY_TIMER" type="number">
+            <range min="50" max="65535"/>
+
+        </para>
+
+        <para index="3" name="LLIM_RECONFIG_SECURITY_UE_ENTITY_TIMER_TIMERID_29_VALUE"
+                description="LLIM_RECONFIG_SECURITY_UE_ENTITY_TIMER" type="number">
+            <range min="50" max="65535"/>
+
+        </para>
+
+        <para index="4" name="LLIM_RESUME_UE_ENTITY_TIMER_TIMERID_30_VALUE" description="LLIM_RESUME_UE_ENTITY_TIMER"
+                type="number">
+            <range min="50" max="65535"/>
+        </para>
+
+    </command>
+</macro>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+
+    <command name="ADD ALARM" macro_code="3001" macro_name="Add Supported Alarm" command_group="7" para_num="10"
+            maindisplay="1 2 3 4 5 6 7 8 9 10" must_give="1 2 3 4 5">
+        <para index='1' name='AlarmCode' type='number' description='Alarm Id'>
+            <range min="0" max="9999999"/>
+        </para>
+        <para index='2' name='AlarmName' type='text' minlength="1" maxlength="128" description='Alarm Name'>
+
+        </para>
+        <para index='3' name='AlarmType' type='text' minlength="1" maxlength="128" description='Alarm Type'>
+
+        </para>
+
+        <para index='4' name='Severity' type='list' description='Severity'>
+
+            <list name="Critical" value="0"/>
+            <list name="Major" value="1"/>
+            <list name="Minor" value="2"/>
+            <list name="Warning" value="3"/>
+            <list name="Indeterminate" value="4"/>
+
+        </para>
+
+        <para index='5' name='ReportingMechanism' type='list' description='Reporting Mechanism'>
+            <list name='Expedited' value='0'/>
+            <list name='Disabled' value='3'/>
+        </para>
+
+        <para index='6' name='ProbableCause' type='text' minlength="1" maxlength="256" description='Probable Cause'/>
+
+        <para index='7' name='SpecificProblem' type='text' minlength="1" maxlength="256" description='Specific Problem'>
+
+        </para>
+
+        <para index='8' name='ManagedObjectInstance' type='text' minlength="0" maxlength="128"
+                description='Managed Object Instance'>
+
+        </para>
+        <para index='9' name='AlarmSystemImpact' type='text' minlength="0" maxlength="128"
+                description='Alarm System Impact'>
+
+        </para>
+        <para index='10' name='AlarmSolution' type='text' minlength="0" maxlength="128" description='Alarm Solution'>
+
+        </para>
+
+    </command>
+</macro>

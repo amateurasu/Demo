@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG EPC_PLMNLST" macro_code="3000" macro_name="Change LTE EPC PLMN List" command_group="8"
+            para_num="1" must_give="1" maindisplay="1 2 3 4 5">
+
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="PLMNID" description="PLMNID" type="number">
+            <range min="10000" max="999999"/>
+        </para>
+        <para index="3" name="Enable" description="Enable" type="list">
+            <list name="0" value="0"/>
+            <list name="1" value="1"/>
+        </para>
+        <para index="4" name="IsPrimary" description="IsPrimary" type="list">
+            <list name="0" value="0"/>
+            <list name="1" value="1"/>
+        </para>
+        <para index="5" name="CellReservedForOperatorUse" description="CellReservedForOperatorUse" type="list">
+            <list name="0" value="0"/>
+            <list name="1" value="1"/>
+        </para>
+    </command>
+</macro>

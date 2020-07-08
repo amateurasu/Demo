@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG GENERAL_MIMO_MODE_PARAM" macro_code="3000" macro_name="Change General MIMO Mode Parameters"
+            command_group="7" para_num="7" must_give="1" maindisplay="1 2 3 4 5 6 7">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index='2' name='mimo_num_of_cbsr' description='MIMO Number of CBSR' type='number'>
+            <range min='1' max='4'/>
+        </para>
+        <para index='3' name='sinr_threshold' description='SINR Threshold' type='number'>
+            <range min='0' max='255'/>
+        </para>
+        <para index='4' name='pathloss_threshold' description='Pathloss Threshold' type='number'>
+            <range min='0' max='200'/>
+        </para>
+        <para index='5' name='mobility_threshold' description='Mobility Threshold' type='number'>
+            <range min='0' max='255'/>
+        </para>
+        <para index='6' name='ue_transmit_antenna_selection' description='UE Transmit Antenna Selection' type='list'>
+            <list name='Closed Loop' value='0'/>
+            <list name='Open Loop' value='1'/>
+        </para>
+
+        <para index='7' name='tm_mode_for_strngnt_qci' description='Transmission Mode For Stringent QCI' type='list'>
+            <list name="TM1" value="0"/>
+            <list name="TM2" value="1"/>
+            <list name="TM3" value="2"/>
+            <list name="TM4" value="3"/>
+            <list name="TM5" value="4"/>
+            <list name="TM6" value="5"/>
+            <list name="TM7" value="6"/>
+            <list name="TM8" value="7"/>
+        </para>
+
+    </command>
+</macro>

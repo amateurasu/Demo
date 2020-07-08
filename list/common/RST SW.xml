@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="RST SW" macro_code="3001" macro_name="Restart Software" command_group="7" para_num="0" maindisplay=""
+            must_give="" must_be_confirm="">
+
+    </command>
+</macro>

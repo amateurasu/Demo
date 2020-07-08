@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="LOG INFOR" macro_code="3001" macro_name="LOG INFOR" command_group="7" para_num="3"
+            maindisplay="1 2 3 4 5 6"
+            must_give=" " must_be_confirm="Are you sure you want to active a new software version?">
+        <para index="1" name="UserName" id="Username" description="User Name" type="text">
+        </para>
+        <para index="2" name="StartDate" description="Start Date" type="text">
+        </para>
+        <para index="3" name="EndDate" description="End Date" type="text">
+        </para>
+        <para index="4" name="StartTime" description="Start Time" type="text">
+        </para>
+        <para index="5" name="EndTime" description="End Time" type="text">
+        </para>
+        <para index="6" name="MaxRecord" description="Maximun Return Record" type="number">
+            <range min="0" max="1000"/>
+        </para>
+    </command>
+</macro>

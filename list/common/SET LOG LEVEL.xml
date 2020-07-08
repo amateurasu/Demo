@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SET LOG_LEVEL" macro_code="3003" macro_name="Set eNodeB Log Level" command_group="7" para_num="2"
+            maindisplay="1 2" must_give="1 2">
+        <para index="1" name="module" description="Module" multi_value="1" type="list">
+            <list name="System" value="54"/>
+            <list name="OAM" value="69"/>
+            <list name="BSM" value="68"/>
+            <list name="L2" value="53"/>
+            <list name="MAC" value="50"/>
+            <list name="RLC" value="51"/>
+            <list name="PDCP" value="52"/>
+            <list name='EGTPU' value='65'/>
+            <list name='L3_RRC' value='55'/>
+            <list name='L3_S1AP' value='93'/>
+            <list name='L3_X2AP' value='91'/>
+            <list name='RRM' value='57'/>
+            <list name='ORRU' value='58'/>
+            <child_select>
+                <value min="50" max="50"/>
+                <open index="3" must_give=""/>
+            </child_select>
+            <child_select>
+                <value min="68" max="68"/>
+                <open index="5" must_give=""/>
+            </child_select>
+            <child_select>
+                <value min="51" max="51"/>
+                <open index="3" must_give=""/>
+            </child_select>
+            <child_select>
+                <value min="52" max="52"/>
+                <open index="3" must_give=""/>
+            </child_select>
+            <child_select>
+                <value min="53" max="53"/>
+                <open index="3" must_give="3"/>
+            </child_select>
+            <child_select>
+                <value min="65" max="65"/>
+                <open index="3" must_give=""/>
+            </child_select>
+            <child_select>
+                <value min="55" max="55"/>
+                <open index="3" must_give=""/>
+            </child_select>
+            <child_select>
+                <value min="93" max="93"/>
+                <open index="3" must_give=""/>
+            </child_select>
+            <child_select>
+                <value min="91" max="91"/>
+                <open index="3" must_give=""/>
+            </child_select>
+            <child_select>
+                <value min="57" max="57"/>
+                <open index="3 4" must_give=""/>
+            </child_select>
+            <child_select>
+                <value min="58" max="58"/>
+                <open index="5" must_give=""/>
+            </child_select>
+        </para>
+        <para index="2" name="level" description="Log level" type="list" default='3'>
+            <list name="Critical" value="0"/>
+            <list name="Error" value="1"/>
+            <list name="Warning" value="2"/>
+            <list name="Info" value="3"/>
+            <list name='Brief' value='4'/>
+            <list name='Detailed' value='5'/>
+            <list name='Detailed All' value='6'/>
+        </para>
+
+        <para index='3' name='cell' description='Cell' default='0' type='list'>
+            <list name='Cell 0' value='0'/>
+            <list name='Cell 1' value='1'/>
+            <list name='Cell 2' value='2'/>
+            <list name='All cell' value='all'/>
+        </para>
+
+        <para index='4' name='rrm_module_id' description='RRM Module Id' type='list' default='0'>
+            <list name='RRM Management Interface Handler' value='21'/>
+            <list name='CELL Manager' value='22'/>
+            <list name='UE Manager' value='23'/>
+            <list name='All RRM Module' value='0'/>
+        </para>
+
+        <para index='5' name='cell' description='BBC' default='0' type='list'>
+            <list name='BBC1' value='0'/>
+            <list name='BBC2' value='1'/>
+            <list name='BBC3' value='2'/>
+            <list name='All BBC' value='all'/>
+        </para>
+
+    </command>
+</macro>

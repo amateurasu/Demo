@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW GW" macro_code="3000" macro_name="Show LTE Gateway" command_group="8" para_num="0"
+            maindisplay="0">
+    </command>
+</macro>

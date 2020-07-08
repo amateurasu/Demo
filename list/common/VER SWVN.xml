@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="VER SWVN" macro_code="3001" macro_name="Verify Software Version" command_group="7" para_num="0"
+            maindisplay="1"
+            must_give="">
+    </command>
+</macro>
+

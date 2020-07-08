@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SAV CONFIG" macro_code="3000" macro_name="Save current configuration" command_group="7" para_num="1"
+            maindisplay="1" must_give="">
+        <para index='1' description='XML_TYPE' name='XML_TYPE' type='list' default='eNodeB_Data_Model_TR_196_based.xml'>
+            <list name='eNodeB_Data_Model_TR_196_based.xml' value='eNodeB_Data_Model_TR_196_based.xml'/>
+            <list name='Proprietary_eNodeB_Data_Model.xml' value='Proprietary_eNodeB_Data_Model.xml'/>
+            <list name='Both' value='BOTH'/>
+        </para>
+    </command>
+</macro>

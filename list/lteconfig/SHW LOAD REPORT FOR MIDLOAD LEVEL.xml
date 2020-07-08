@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW LOAD_REPORT_FOR_MIDLOAD_LEVEL" macro_code="3000"
+            macro_name="Show load reporting for midle load Level" command_group="7" para_num="0" maindisplay=""
+            must_give="">
+    </command>
+</macro>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW RRC_UECC_TIMER" macro_code="3000" macro_name="Show RRC UECC Timers Parameters" command_group="7"
+            para_num="2" must_give="" maindisplay="">
+
+    </command>
+</macro>

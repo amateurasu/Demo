@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG PWR_CTRL" macro_code="3000" macro_name="Change Power Control Parameters" command_group="7"
+            para_num="10" must_give="1" maindisplay="1 2 3 4 5 6 7 8 9 10">
+
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index="2" name="harqBlerClpcPucchEnable" description="HARQ Bler CLPC PUCCH Enable" type="list">
+            <list name="Disable" value="0"/>
+            <list name="Enable" value="1"/>
+        </para>
+
+        <para index="3" name="cqiSinrClpcPucchEnable" description="CQI SINR CLPC PUCCH Enable" type="list">
+            <list name="Disable" value="0"/>
+            <list name="Enable" value="1"/>
+        </para>
+
+        <para index="4" name="clpcPuschEnable" description="CLPC PUSCH Enable" type="list">
+            <list name="Disable" value="0"/>
+            <list name="Enable" value="1"/>
+        </para>
+
+        <para index="5" name="dci_3_3a_based_power_control_for_pucch_enable"
+                description="DCI 3/3A Base Power Ctrl For PUCCH Enabl" type="list">
+            <list name="Disable" value="0"/>
+            <list name="Enable" value="1"/>
+        </para>
+
+        <para index="6" name="dci_3_3a_based_power_control_for_pusch_enable"
+                description="DCI 3/3A Base Power Ctrl For PUSCH Enable" type="list">
+            <list name="Disable" value="0"/>
+            <list name="Enable" value="1"/>
+        </para>
+
+        <para index="7" name="clpcPuschfreqSelectiveEnable" description="CLPC PUSCH Frequency Selective Enable"
+                type="list">
+            <list name="Disable" value="0"/>
+            <list name="Enable" value="1"/>
+        </para>
+
+        <para index="8" name="pdcchPoworAggregationEnable" description="PDCCH Power Control or Aggregation Enabled"
+                type="list">
+            <list name="Disable" value="0"/>
+            <list name="Enable" value="1"/>
+        </para>
+
+        <para index="9" name="delta_mcs_enabled" description="Delta MCS Enable" type="list">
+            <list name="Disable" value="0"/>
+            <list name="Enable" value="1"/>
+        </para>
+
+        <para index="10" name="accumulation_enabled" description="Accumulation Enable" type="list">
+            <list name="Disable" value="0"/>
+            <list name="Enable" value="1"/>
+        </para>
+
+    </command>
+</macro>

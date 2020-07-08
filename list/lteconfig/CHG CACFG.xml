@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG CACFG" macro_code="3000" macro_name="Change LTE Carrier Aggregation" command_group="7"
+            para_num="6" maindisplay="1 2 3 4 5 6" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="isCAEligible" description="CA supported?" multi_value="1" type="list">
+            <list name="No" value="0" description="No"/>
+            <list name="Yes" value="1" description="Yes"/>
+        </para>
+        <para index="3" name="minNumUEThruputReport" description="Minimum UE thruput report" type="number">
+            <range min='1' max='20'/>
+        </para>
+        <para index='4' name='applicableBitrateDL' description='Applicable bitrate DL' type='number'>
+            <range min='5' max='18446744073709551615'/>
+        </para>
+        <para index='5' name='isMASA' description='isMASA' multi_value='1' type='list'>
+            <list name="No" value="0" description="No"/>
+            <list name="Yes" value="1" description="Yes"/>
+        </para>
+        <para index='6' name='ScellDeactTimer' description='Scell deactive timer' multi_value='1' type='list'>
+            <list name="FR2" value="RF2" description="RF2"/>
+            <list name='RF4' value='RF4' description='RF4'/>
+            <list name='RF8' value='RF8' description='RF8'/>
+            <list name='RF16' value='RF16' description='RF16'/>
+            <list name='RF32' value='RF32' description='RF32'/>
+            <list name='RF64' value='RF64' description='RF64'/>
+            <list name='RF128' value='RF128' description='RF128'/>
+            <list name='RFinf' value='RFinf' description='RFinf'/>
+        </para>
+        <para index='7' name='loadCalcWindowSize' description='Load calculator Window size' type='number'>
+            <range min='100' max='5000'/>
+        </para>
+        <para index='8' name='loadDisparityThresh' description='Load Disparity Threshold' type='number'>
+            <range min='0' max='100'/>
+        </para>
+        <para index='9' name='MCSDiffThresh' description='MSC Different Threshold' type='number'>
+            <range min='0' max='28'/>
+        </para>
+        <para index='10' name='PRBUsageWatermark' description='PRB Usage Watermark' type='number'>
+            <range min='0' max='100'/>
+        </para>
+        <para index='11' name='DLDeactCMDThresh' description='DLDeactCMDThresh' type='number'>
+            <range min='0' max='255'/>
+        </para>
+        <para index='12' name='DLDeactMCSLowThresh' description='DLDeactMCSLowThresh' type='number'>
+            <range min='0' max='28'/>
+        </para>
+        <para index='13' name='DLQLoadUPThresh' description='DLQLoadUPThresh' type='number'>
+            <range min='0' max='255'/>
+        </para>
+        <para index='14' name='DLQLoadLowThresh' description='DLQLoadLowThresh' type='number'>
+            <range min='0' max='255'/>
+        </para>
+        <para index='15' name='ActDeactTriggerCountThresh' description='ActDeactTriggerCountThresh' type='number'>
+            <range min='0' max='255'/>
+        </para>
+    </command>
+</macro>

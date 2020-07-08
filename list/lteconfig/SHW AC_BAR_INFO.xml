@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW AC_BAR_INFO" macro_code="3000" macro_name="Show Access Barring Info" command_group="7"
+            para_num="3" must_give="1 2" maindisplay="1 2">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index="2" name="AccessCategory" parentAdd='1' description="Access Category" type="list" multi-value="1">
+            <list name="Signaling" value="AC_BARRING_FOR_MO_SIGNALLING"/>
+            <list name="Data" value="AC_BARRING_FOR_MO_DATA"/>
+            <list name="MMTel Voice R9" value="SSAC_BARRING_FOR_MMTEL_VOICE_R9"/>
+            <list name="MMTel Video R9" value="SSAC_BARRING_FOR_MMTEL_VIDEO_R9"/>
+            <list name="CSFB R10" value="AC_BARRING_FOR_CSFB_R10"/>
+        </para>
+
+    </command>
+</macro>

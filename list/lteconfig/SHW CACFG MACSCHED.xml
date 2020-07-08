@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW CACFG_MACSCHED" macro_code="3000" macro_name="Show LTE Carrier Aggrigation Mac Scheduler"
+            command_group="8" para_num="1" must_give="1" maindisplay="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+            <!-- <list name="All" value="all" description="All" /> -->
+        </para>
+        <!-- <para index="1" name="isCAEligible" description="is CA Eligible" type="checkbox"></para>
+        <para index="2" name="minNumUEThruputReport" description="Min Number Through Put Report" type="checkbox"></para>
+        <para index="3" name="applicableBitrateDL" description="Applicable Bitrate DL" type="checkbox"></para>
+        <para index="4" name="isMASA" description="isMASA" type="checkbox"></para>
+        <para index="5" name="ScellDeactTimer" description="Scell Deactive Timer" type="checkbox"></para>
+        <para index="6" name="loadCalcWindowSize" description="Load Calculator Window Size" type="checkbox"></para>
+        <para index="7" name="loadDisparityThresh" description="Load Disparity Threshold" type="checkbox"></para>
+        <para index="8" name="MCSDiffThresh" description="MCS Different Threshold" type="checkbox"></para>
+        <para index="9" name="PRBUsageWatermark" description="PRB Usage Watermark" type="checkbox"></para>
+        <para index="10" name="DLDeactCMDThresh" description="DL Deactive CMD Threshold" type="checkbox"></para>
+        <para index="11" name="DLDeactMCSLowThresh" description="DL Deactive MCS Low Threshold" type="checkbox"></para>
+        <para index="12" name="DLQLoadUPThresh" description="DLQ Load Up Threshold" type="checkbox"></para>
+        <para index="13" name="DLQLoadLowThresh" description="DLQ Load Low Threshold" type="checkbox"></para>
+        <para index="14" name="ActDeactTriggerCountThresh" description="Act Deactive Trigger Count Threshold" type="checkbox"></para> -->
+    </command>
+</macro>

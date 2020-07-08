@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG VLAN_ID" macro_code="3000" macro_name="Change VLAN ID" command_group="7" para_num="2"
+            maindisplay="1 2" must_give="1 2">
+
+        <para index="1" name="vlanName" description="Vlan Name" type="text" minlength="1" maxlength="63">
+        </para>
+
+        <para index='2' name='vlanId' description='Vlan ID' type='number' default='2'>
+            <range min='2' max='4094'/>
+        </para>
+
+    </command>
+</macro>

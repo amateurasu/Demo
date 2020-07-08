@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW LOAD_CONFIG" macro_code="3000" macro_name="Show Load Access Class Barring Parameters"
+            command_group="7" para_num="2" must_give="1 2" maindisplay="1 2">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index="2" name="loadlevel" parentAdd='1' description="Load Level" type="list" multi-value="1">
+            <list name="HighLoad" value="high_load"/>
+            <list name="OverLoad" value="over_load"/>
+            <list name="MidLoad" value="mid_load"/>
+        </para>
+    </command>
+</macro>

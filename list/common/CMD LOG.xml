@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CMD LOG" macro_code="3001" macro_name="Command Log" command_group="7" para_num="4" maindisplay="1 4"
+            must_give="1 2 3 4">
+        <para index="1" name="UserName" id="Username" description="User Name" type="text">
+        </para>
+        <para index="2" name="StartDate" description="Start Date" type="text">
+        </para>
+        <para index="3" name="EndDate" description="End Date" type="text">
+        </para>
+        <para index="4" name="MaxRecord" description="Maximum Return Record" type="number" default='100'>
+            <range min="0" max="1000"/>
+        </para>
+    </command>
+</macro>

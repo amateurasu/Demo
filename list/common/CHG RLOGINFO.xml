@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG LOGBK" macro_code="3003" macro_name="Change Backup Log params" command_group="7" para_num="4"
+            maindisplay="1 2 3 4" must_give="1 2 3 4">
+        <para index="1" name="NeSftpIp" description="SFTP Server IP" type="text"
+                pattern="/^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/">
+        </para>
+        <para index="2" name="NeSftpUserName" description="SFTP username" type="text" minlength="1" maxlength="64">
+        </para>
+        <para index="3" name="NeSftpPwd" description="SFTP password" type="text" minlength="1" maxlength="64">
+        </para>
+        <para index="4" name="NeSftpDir" description="SFTP LOG directory" type="text" minlength="1" maxlength="255">
+        </para>
+    </command>
+</macro>

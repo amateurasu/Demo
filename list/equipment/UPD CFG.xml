@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="UPD CFG" macro_code="3000" macro_name="Update Configuration" command_group="7" para_num="1"
+            maindisplay="1" must_give="1">
+        <para index='1' name='CardType' type='number' description='Card Type'>
+            <range min="0" max="5"/>
+        </para>
+    </command>
+</macro>

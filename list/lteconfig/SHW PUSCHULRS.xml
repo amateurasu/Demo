@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW PUSCHULRS" macro_code="3000" macro_name="Show LTE RAN PHY PUSCHULRS" command_group="7"
+            para_num="1" maindisplay="1" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+            <!-- <list name="All" value="all" description="All" /> -->
+        </para>
+    </command>
+</macro>

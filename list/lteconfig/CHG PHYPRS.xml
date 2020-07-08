@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG PHYPRS" macro_code="3000" macro_name="Change LTE RAN PHY PRS" command_group="7" para_num="19"
+            maindisplay="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="NumPRSResourceBlocks" description="Num PRS Resource Blocks" type="number">
+            <range min="0" max="5"/>
+        </para>
+        <para index="3" name="PRSConfigurationIndex" description="PRS Configuration Index" type="number">
+            <range min="0" max="4095"/>
+        </para>
+        <para index="4" name="NumConsecutivePRSSubframes" description="Num Consecutive PRSSub frames" type="list">
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="4" value="4"/>
+            <list name="6" value="6"/>
+        </para>
+        <para index="5" name="X_VENDOR_MUTING_CONFIG_TWO" description="X_VENDOR_MUTING_CONFIG_TWO" type="number">
+            <range min="0" max="3"/>
+        </para>
+        <para index="6" name="X_VENDOR_MUTING_CONFIG_FOUR" description="X_VENDOR_MUTING_CONFIG_FOUR" type="number">
+            <range min="0" max="15"/>
+        </para>
+        <para index="7" name="X_VENDOR_MUTING_CONFIG_EIGHT" description="X_VENDOR_MUTING_CONFIG_EIGHT" type="number">
+            <range min="0" max="255"/>
+        </para>
+        <para index="8" name="X_VENDOR_MUTING_CONFIG_SIXTEEN" description="X_VENDOR_MUTING_CONFIG_SIXTEEN"
+                type="number">
+            <range min="0" max="65535"/>
+        </para>
+        <para index="9" name="X_VENDOR_PRS_TRANSMISSION_POWER" description="X_VENDOR_PRS_TRANSMISSION_POWER"
+                type="number">
+            <range min="-60" max="40"/>
+        </para>
+        <para index="10" name="X_VENDOR_LATITUDE_SIGN" description="X_VENDOR_LATITUDE_SIGN" type="list">
+            <list name="Yes" value="1"/>
+            <list name="No" value="0"/>
+        </para>
+        <para index="11" name="X_VENDOR_DEG_OF_LATITUDE" description="X_VENDOR_DEG_OF_LATITUDE" type="number">
+            <range min="0" max="90"/>
+        </para>
+        <para index="12" name="X_VENDOR_DEG_OF_LONGITUDE" description="X_VENDOR_DEG_OF_LONGITUDE" type="number">
+            <range min="-180" max="180"/>
+        </para>
+        <para index="13" name="X_VENDOR_ALTITUDE" description="X_VENDOR_ALTITUDE" type="number">
+            <range min="0" max="32767"/>
+        </para>
+        <para index="14" name="X_VENDOR_UNCERTAINTY_SEMI_MAJOR" description="X_VENDOR_UNCERTAINTY_SEMI_MAJOR"
+                type="number">
+            <range min="0" max="1800000"/>
+        </para>
+        <para index="15" name="X_VENDOR_UNCERTAINTY_SEMI_MINOR" description="X_VENDOR_UNCERTAINTY_SEMI_MINOR"
+                type="number">
+            <range min="0" max="1800000"/>
+        </para>
+        <para index="16" name="X_VENDOR_ORIENTATION_OF_MAJOR_AXIS" description="X_VENDOR_ORIENTATION_OF_MAJOR_AXIS"
+                type="number">
+            <range min="0" max="179"/>
+        </para>
+        <para index="17" name="X_VENDOR_UNCERTAINTY_ALTITUDE" description="X_VENDOR_UNCERTAINTY_ALTITUDE" type="number">
+            <range min="0" max="990"/>
+        </para>
+        <para index="18" name="X_VENDOR_CONFIDENCE" description="X_VENDOR_CONFIDENCE" type="number">
+            <range min="0" max="100"/>
+        </para>
+        <para index="19" name="X_VENDOR_PRS_ENABLE" description="X_VENDOR_PRS_ENABLE" type="list">
+            <list name="Yes" value="1"/>
+            <list name="No" value="0"/>
+        </para>
+    </command>
+</macro>

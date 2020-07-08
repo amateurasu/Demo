@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG 1588_CONFIG" macro_code="3000" macro_name="Change 1588 Config" command_group="7" para_num="9"
+            maindisplay="1 2 3 4 5 6 7 8 9 10" must_give="">
+
+        <para index="1" name="physicalInterface" description="Physical Interface" type="list">
+            <list name='fm1-mac0' value='fm1-mac0'/>
+            <list name='fm1-mac1' value='fm1-mac1'/>
+            <list name='fm1-mac2' value='fm1-mac2'/>
+            <list name='fm1-mac3' value='fm1-mac3'/>
+            <list name='fm1-mac4' value='fm1-mac4'/>
+            <list name='fm1-mac5' value='fm1-mac5'/>
+            <list name='fm1-mac6' value='fm1-mac6'/>
+            <list name='fm1-mac7' value='fm1-mac7'/>
+            <list name='fm1-mac8' value='fm1-mac8'/>
+            <list name='fm1-mac9' value='fm1-mac9'/>
+        </para>
+
+        <para index="2" name="transportInterface" description="1588 Transport Interface" type="text" minlength="1"
+                maxlength="63">
+        </para>
+
+        <para index="3" name="domain" description="1588 Domain" type="number">
+            <range min='0' max='255'/>
+        </para>
+
+        <para index="4" name="ipMode" description="IP Mode" type="list">
+            <list name='Unicast' value='unicast'/>
+            <list name='Multicast' value='multicast'/>
+        </para>
+
+        <para index="5" name="ipAddress" description="Clock Server IP address (Master)" type="ipaddress"
+                pattern="/^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/">
+        </para>
+
+        <para index="6" name="backupIp" description="Clock Server IP address (Backup)" type="ipaddress"
+                pattern="/^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/">
+        </para>
+
+        <para index="7" name="negotiation" description="Negotiation Enable" type="list">
+            <list name='Yes' value='y'/>
+            <list name='No' value='n'/>
+        </para>
+
+        <para index="8" name="timeInterval" description="Time Interval" type="number">
+            <range min='0' max='9999'/>
+        </para>
+
+        <para index="9" name="cpuCore" description="CPU Core" type="number">
+            <range min='0' max='7'/>
+        </para>
+
+        <para index="10" name="ipDSCP" description="IP DSCP" type="number">
+            <range min='0' max='63'/>
+        </para>
+
+    </command>
+</macro>

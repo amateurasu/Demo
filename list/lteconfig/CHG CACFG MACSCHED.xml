@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG CACFG_MACSCHED" macro_code="3000" macro_name="Change LTE Carrier Aggregation Mac Scheduler"
+            command_group="7" para_num="10" maindisplay="1 2 3 4 5 6 7 8 9 10" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index='2' name='loadCalcWindowSize' description='Load calculator Window size' type='number'>
+            <range min='100' max='5000'/>
+        </para>
+        <para index='3' name='loadDisparityThresh' description='Load Disparity Threshold' type='number'>
+            <range min='0' max='100'/>
+        </para>
+        <para index='4' name='MCSDiffThresh' description='MSC Different Threshold' type='number'>
+            <range min='0' max='28'/>
+        </para>
+        <para index='5' name='PRBUsageWatermark' description='PRB Usage Watermark' type='number'>
+            <range min='0' max='100'/>
+        </para>
+        <para index='6' name='DLDeactCMDThresh' description='DL Deact CMD Threshold' type='number'>
+            <range min='0' max='255'/>
+        </para>
+        <para index='7' name='DLDeactMCSLowThresh' description='DL Deact MCS Low Threshold' type='number'>
+            <range min='0' max='28'/>
+        </para>
+        <para index='8' name='DLQLoadUPThresh' description='DL QLoad UP Threshold' type='number'>
+            <range min='0' max='255'/>
+        </para>
+        <para index='9' name='DLQLoadLowThresh' description='DL QLoad Low Threshold' type='number'>
+            <range min='0' max='255'/>
+        </para>
+        <para index='10' name='ActDeactTriggerCountThresh' description='Act Deact Trigger Count Thresh' type='number'>
+            <range min='0' max='255'/>
+        </para>
+    </command>
+</macro>

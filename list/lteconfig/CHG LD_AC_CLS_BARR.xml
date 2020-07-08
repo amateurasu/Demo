@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG LD_AC_CLS_BARR" macro_code="3000" macro_name="Change Load Access Class Barring Parameters"
+            command_group="7" para_num="6" must_give="1 2 3" maindisplay="1 2 3 4 5 6">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index="2" name="LoadLevel" parentAdd='1' description="Load Level" type="list" multi-value="1">
+            <list name="HighLoad" value="high_load"/>
+            <list name="OverLoad" value="over_load"/>
+            <list name="MidLoad" value="mid_load"/>
+        </para>
+
+        <para index="3" name="LoadAccessClassBarring" parentAdd='1' description="Load Access Class Barring" type="list"
+                multi-value="1">
+            <list name="AccessBarringForMoSignalling" value="acBarringForMoSignalling"/>
+            <list name="AccessBarringForMoData" value="acBarringForMoData"/>
+            <list name="ServiceSpecificAccessBarringForMMTELVoice" value="ssac_barring_for_mmtel_voice_r9"/>
+            <list name="ServiceSpecificAccessBarringForMMTELVideo" value="ssac_barring_for_mmtel_video_r9"/>
+        </para>
+
+        <para index="3" name="LoadLevel" parentAdd='1' description="Load Level" type="list" multi-value="1">
+            <list name="HighLoad" value="high_load"/>
+            <list name="OverLoad" value="over_load"/>
+            <list name="MidLoad" value="mid_load"/>
+        </para>
+
+        <para index="4" name="acBarringFactor" description="Access Barring Factor" type="list">
+            <list name="P00" value="0"/>
+            <list name="P05" value="1"/>
+            <list name="P10" value="2"/>
+            <list name="P15" value="3"/>
+            <list name="P20" value="4"/>
+            <list name="P25" value="5"/>
+            <list name="P30" value="6"/>
+            <list name="P40" value="7"/>
+            <list name="P50" value="8"/>
+            <list name="P60" value="9"/>
+            <list name="P70" value="10"/>
+            <list name="P75" value="11"/>
+            <list name="P80" value="12"/>
+            <list name="P85" value="13"/>
+            <list name="P90" value="14"/>
+            <list name="P95" value="15"/>
+
+        </para>
+
+        <para index="5" name="acBarringTime" description="Access Barring Time" type="list">
+            <list name="S4" value="0"/>
+            <list name="S8" value="1"/>
+            <list name="S16" value="2"/>
+            <list name="S32" value="3"/>
+            <list name="S64" value="4"/>
+            <list name="S128" value="5"/>
+            <list name="S256" value="6"/>
+            <list name="S512" value="7"/>
+        </para>
+
+        <para index="6" name="acBarringForSpecialAc" description="Access Barring For Special AC" type="number">
+            <range min="0" max="248"/>
+        </para>
+
+    </command>
+</macro>

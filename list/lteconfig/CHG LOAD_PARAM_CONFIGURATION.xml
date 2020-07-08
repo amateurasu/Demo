@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG LOAD_PARAM_CONFIGURATION" macro_code="3000" macro_name="Change Load Param Configuration"
+            command_group="7" para_num="1" must_give="" maindisplay="1">
+        <para index="1" name="ncl_load_ind_intrvl" description="ncl_load_ind_intrvl" type="list">
+            <list name="0" value="0"/>
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="5" value="5"/>
+            <list name="10" value="10"/>
+        </para>
+    </command>
+</macro>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG RRM_MEAS_CFG" macro_code="3000" macro_name="Change Uplink Power Control Delicated"
+            command_group="7" para_num="6" must_give="1" maindisplay="1 2 3 4 5">
+
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index='2' name='delayed_a3_enabled' description='Delayed A3 Enabled' type='list'>
+            <list name='Not_Delayed' value='0'/>
+            <list name='Delayed' value='1'/>
+        </para>
+        <para index='3' name='a4_meas_cfg_enabled' description='A4 Measurement Configuration Enabled' type='list'>
+            <list name='Disabled' value='0'/>
+            <list name='Enabled' value='1'/>
+        </para>
+        <para index='4' name='csfb_blind_timer_duration' description='CSFB Blind Timer Duration' type='number'>
+            <range min='0' max='65535'/>
+        </para>
+
+        <para index='5' name='s_measure' description='S_Measure' type='number'>
+            <range min='0' max='97'/>
+        </para>
+
+    </command>
+</macro>

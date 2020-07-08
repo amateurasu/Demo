@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG CELL" macro_code="3000" macro_name="Change Cell Parameters" command_group="7" para_num="3"
+            maindisplay="1 2 3" must_give="1">
+        <para index="1" name="CellId" parentAttr='1' description="Cell ID" type="list" multi-value="1" default='0'>
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="LocalCellId" description="Local Cell Index" type="number">
+            <range min="0" max="255"/>
+        </para>
+        <para index="3" name="CellName" description="Cell Name" type="text" minlength="1" maxlength="32">
+
+        </para>
+    </command>
+</macro>

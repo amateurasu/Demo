@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW ALARM" macro_code="3000" macro_name="Show Supported Alarm" command_group="7" para_num="3"
+            maindisplay="1" must_give="1">
+
+        <para index="1" name="AlarmCode" description="Alarm Code" type="number" default="0">
+            <range min="0" max="9999999"/>
+        </para>
+
+    </command>
+</macro>

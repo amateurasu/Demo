@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG POWER_THD" macro_code="3000" macro_name="Change Power Card Threshold" command_group="7"
+            para_num="9" maindisplay="1 2 3 4" must_give="1 2 3 4">
+        <para index="1" name="RackNumber" description="Rack Number" type="list" default="0">
+            <list name='0' value='0'/>
+            <list name='1' value='1'/>
+            <list name='2' value='2'/>
+            <list name='3' value='3'/>
+        </para>
+        <para index="2" name="SubRackNumber" description="Subrack Number" type="list" default="0">
+            <list name='0' value='0'/>
+            <list name='1' value='1'/>
+            <list name='2' value='2'/>
+            <list name='3' value='3'/>
+        </para>
+        <para index="3" name="SlotNumber" description="Power Card" type="list" default="5">
+            <list name='Power Card 1' value='5'/>
+            <list name='Power Card 2' value='6'/>
+        </para>
+        <para index="4" name="CurrentUpperThd" description="Current Upper Threshold (Unit: mA)" type="number">
+            <range min="0" max="20000"/>
+        </para>
+    </command>
+</macro>

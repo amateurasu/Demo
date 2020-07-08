@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG RRM_PUCCH" macro_code="3000" macro_name="Change RRM PUCCH Configuration" command_group="7"
+            para_num="7" must_give="1" maindisplay="1 2 3 4 5 6 7">
+
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index='2' name='initial_sr_periodicity' description='Initial SR Periodicity' type='number'>
+            <range min='0' max='4'/>
+        </para>
+        <para index='3' name='final_sr_periodicity' description='Final SR Periodicity' type='number'>
+            <range min='0' max='4'/>
+        </para>
+        <para index='4' name='initial_cqi_periodicity' description='Initial QCI Periodicity' type='number'>
+            <range min='0' max='6'/>
+        </para>
+
+        <para index='5' name='final_cqi_periodicity' description='Final QCI Periodicity' type='number'>
+
+            <range min='0' max='6'/>
+
+        </para>
+
+        <para index='6' name='initial_ri_periodicity' description='Initial RI Periodicity' type='list'>
+
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="4" value="4"/>
+            <list name="8" value="8"/>
+            <list name="16" value="16"/>
+            <list name="32" value="32"/>
+
+        </para>
+
+        <para index='7' name='srs_periodicity' description='SRS Periodicity' type='number'>
+
+            <range min='0' max='7'/>
+
+        </para>
+
+    </command>
+</macro>

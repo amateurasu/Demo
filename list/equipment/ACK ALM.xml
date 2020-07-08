@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="ACK ALM" macro_code="3000" macro_name="ACK Alarm" command_group="7" para_num="4"
+            maindisplay="1 2 3 4" must_give="1 2 3">
+        <para index='1' name='alarmCode' type='text' minlength="1" maxlength="128" description='Alarm Code'>
+        </para>
+        <para index='2' name='location' type='text' minlength="1" maxlength="128" description='Location'>
+        </para>
+        <para index='3' name='lasttime' type='text' minlength="1" maxlength="128" description='Last Time'>
+        </para>
+        <para index='4' name='notificationType' type='text' minlength="1" maxlength="128"
+                description='Notification Type'>
+        </para>
+    </command>
+</macro>

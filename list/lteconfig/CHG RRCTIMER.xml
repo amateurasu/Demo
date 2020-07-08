@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG RRCTIMER" macro_code="3000" macro_name="Change LTE RAN RRCTIMER" command_group="7" para_num="11"
+            maindisplay="1 2 3 4 5 6 7 8 9 10 11 12" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="N310" description="N310" type="list">
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="3" value="3"/>
+            <list name="4" value="4"/>
+            <list name="6" value="6"/>
+            <list name="8" value="8"/>
+            <list name="10" value="10"/>
+            <list name="20" value="20"/>
+        </para>
+        <para index="3" name="N311" description="N311" type="list">
+            <list name="1" value="1"/>
+            <list name="2" value="2"/>
+            <list name="3" value="3"/>
+            <list name="4" value="4"/>
+            <list name="5" value="5"/>
+            <list name="6" value="6"/>
+            <list name="8" value="8"/>
+            <list name="10" value="10"/>
+        </para>
+        <para index="4" name="T300" description="T300" type="list">
+            <list name="100" value="100"/>
+            <list name="200" value="200"/>
+            <list name="300" value="300"/>
+            <list name="400" value="400"/>
+            <list name="600" value="600"/>
+            <list name="1000" value="1000"/>
+            <list name="1500" value="1500"/>
+            <list name="2000" value="2000"/>
+        </para>
+        <para index="5" name="T301" description="T301" type="list">
+            <list name="100" value="100"/>
+            <list name="200" value="200"/>
+            <list name="300" value="300"/>
+            <list name="400" value="400"/>
+            <list name="600" value="600"/>
+            <list name="1000" value="1000"/>
+            <list name="1500" value="1500"/>
+            <list name="2000" value="2000"/>
+        </para>
+        <para index="6" name="T302" description="T302" type="list">
+            <list name="100" value="100"/>
+            <list name="200" value="200"/>
+            <list name="300" value="300"/>
+            <list name="400" value="400"/>
+            <list name="600" value="600"/>
+            <list name="1000" value="1000"/>
+            <list name="1500" value="1500"/>
+            <list name="2000" value="2000"/>
+        </para>
+        <para index="7" name="T310" description="T310" type="list">
+            <list name="0" value="0"/>
+            <list name="50" value="50"/>
+            <list name="100" value="100"/>
+            <list name="200" value="200"/>
+            <list name="500" value="500"/>
+            <list name="1000" value="1000"/>
+            <list name="2000" value="2000"/>
+        </para>
+        <para index="8" name="T311" description="T311" type="list">
+            <list name="1000" value="1000"/>
+            <list name="3000" value="3000"/>
+            <list name="5000" value="5000"/>
+            <list name="10000" value="10000"/>
+            <list name="15000" value="15000"/>
+            <list name="20000" value="20000"/>
+            <list name="30000" value="30000"/>
+        </para>
+        <para index="9" name="T320" description="T320" type="list">
+            <list name="5" value="5"/>
+            <list name="10" value="10"/>
+            <list name="20" value="20"/>
+            <list name="30" value="30"/>
+            <list name="60" value="60"/>
+            <list name="120" value="120"/>
+            <list name="180" value="180"/>
+        </para>
+        <para index="10" name="T304EUTRA" description="T304 EUTRA" type="list">
+            <list name="50" value="50"/>
+            <list name="100" value="100"/>
+            <list name="150" value="150"/>
+            <list name="200" value="200"/>
+            <list name="600" value="600"/>
+            <list name="1000" value="1000"/>
+            <list name="2000" value="2000"/>
+        </para>
+        <para index="11" name="T304IRAT" description="T304 IRAT" type="list">
+            <list name="100" value="100"/>
+            <list name="200" value="200"/>
+            <list name="500" value="500"/>
+            <list name="1000" value="1000"/>
+            <list name="2000" value="2000"/>
+            <list name="4000" value="4000"/>
+            <list name="8000" value="8000"/>
+        </para>
+        <para index="12" name="X_VENDOR_WAIT_TIME" description="X_VENDOR_WAIT_TIME" type="number">
+            <range min="1" max="16"/>
+        </para>
+    </command>
+</macro>

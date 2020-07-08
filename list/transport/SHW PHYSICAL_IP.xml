@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW PHYSICAL_IP" macro_code="3000" macro_name="Show Physical IP" command_group="7" para_num="1"
+            maindisplay="1" must_give="1">
+
+        <para index="1" name="interface" description="Interface Name" type="list" default='fm1-mac3'>
+            <list name='FE1/GE1' value='fm1-mac3'/>
+            <list name='FE0/GE0/LMT' value='fm1-mac4'/>
+            <list name='SFP1' value='fm1-mac9'/>
+            <list name='SFP0' value='fm1-mac10'/>
+        </para>
+
+    </command>
+</macro>

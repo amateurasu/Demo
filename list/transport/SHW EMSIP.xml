@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW EMS_IP" macro_code="3000" macro_name="Show EMS IP" command_group="7" para_num="0" maindisplay="0"
+            must_give="0">
+
+    </command>
+</macro>

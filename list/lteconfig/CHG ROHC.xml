@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG ROHC" macro_code="3000" macro_name="Change ROHC Config" command_group="7" para_num="6"
+            maindisplay="1 2 3 4 5 6" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="enableROHC" description="Enable ROHC" type="list">
+            <list name="Disable" value="0"/>
+            <list name="Enable" value="1"/>
+        </para>
+        <para index="3" name="MAX_CID" description="DL Bandwidth" type="number">
+            <range min="1" max="16383"/>
+        </para>
+        <para index="4" name="ROHC_PROFILE0X0001" description="ROHC_PROFILE0X0001" type="list">
+            <list name="Off" value="0"/>
+            <list name="On" value="1"/>
+        </para>
+        <para index="5" name="ROHC_PROFILE0X0002" description="ROHC_PROFILE0X0002" type="list">
+            <list name="Off" value="0"/>
+            <list name="On" value="1"/>
+        </para>
+        <para index="6" name="ROHC_PROFILE0X0006" description="ROHC_PROFILE0X0006" type="list">
+            <list name="Off" value="0"/>
+            <list name="On" value="1"/>
+        </para>
+
+    </command>
+</macro>

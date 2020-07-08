@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="RMV VLAN_ACCESS_LIST" macro_code="3000" macro_name="Remove Vlan Access List" command_group="7"
+            para_num="3" maindisplay="1 2 3" must_give="1 2 3">
+
+        <para index="1" name="vlanName" description="Vlan Name" type="text">
+        </para>
+
+        <para index="2" name="protocolIp" description="Protocol IP" type="text"
+                pattern="/^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/">
+        </para>
+
+        <para index="3" name="protocolPort" description="Protocol Port" type='number' default='0'>
+            <range min='0' max='1024'/>
+        </para>
+
+    </command>
+</macro>

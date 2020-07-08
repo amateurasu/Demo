@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG MAX PDCP PDU SIZE IPV6" macro_code="3000" macro_name="Change Max PDCP PDU SIZE IPV6"
+            command_group="7" para_num="6" must_give="" maindisplay="1 2 3 4 5 6">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+
+        <para index='2' name='pid' description='Profile ID' type='list' parentAttr='1'>
+            <list name='1' value='1'/>
+            <list name='2' value='2'/>
+            <list name='3' value='3'/>
+            <list name='4' value='4'/>
+            <list name='5' value='5'/>
+            <list name='6' value='6'/>
+            <list name='7' value='7'/>
+            <list name='8' value='8'/>
+            <list name='9' value='9'/>
+            <list name='10' value='10'/>
+            <list name='11' value='11'/>
+            <list name='12' value='12'/>
+            <list name='13' value='13'/>
+            <list name='14' value='14'/>
+            <list name='15' value='15'/>
+            <list name='16' value='16'/>
+        </para>
+
+        <para index='3' name='maxPdcpPduSizeIpv6Value[1]' description='Max PDCP PDU size for RTP Profile' type='number'
+                default='75'>
+            <range min='0' max='10000'/>
+        </para>
+        <para index='4' name='maxPdcpPduSizeIpv6Value[2]' description='Max PDCP PDU size for IP Profile' type='number'
+                default='78'>
+            <range min='0' max='10000'/>
+        </para>
+        <para index='5' name='maxPdcpPduSizeIpv6Value[3]' description='Max PDCP PDU size for UDP Profile' type='number'
+                default='71'>
+            <range min='0' max='10000'/>
+        </para>
+        <para index='6' name='maxPdcpPduSizeIpv6Value[4]' description='Max PDCP PDU size when no ROHC Profile Selected'
+                type='number' default='71'>
+            <range min='0' max='10000'/>
+        </para>
+    </command>
+</macro>

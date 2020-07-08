@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG MACDRX" macro_code="3000" macro_name="Change LTE RAN MAC DRX" command_group="7" para_num="9"
+            maindisplay="1 2 3 4 5 6 7 8 9" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="DRXEnabled" description="DRX Enabled" type="list">
+            <list name="Yes" value="1"/>
+            <list name="No" value="0"/>
+        </para>
+        <para index="3" name="OnDurationTimer" description="On Duration Timer" type="list">
+            <list name='1' value='1'/>
+            <list name='2' value='2'/>
+            <list name='3' value='3'/>
+            <list name='4' value='4'/>
+            <list name='5' value='5'/>
+            <list name='6' value='6'/>
+            <list name='8' value='8'/>
+            <list name='10' value='10'/>
+            <list name='20' value='20'/>
+            <list name='30' value='30'/>
+            <list name='40' value='40'/>
+            <list name='50' value='50'/>
+            <list name='60' value='60'/>
+            <list name='80' value='80'/>
+            <list name='100' value='100'/>
+            <list name='200' value='200'/>
+        </para>
+        <para index="4" name="DRXInactivityTimer" description="DRX Inactivity Timer" type="list">
+            <list name='1' value='1'/>
+            <list name='2' value='2'/>
+            <list name='3' value='3'/>
+            <list name='4' value='4'/>
+            <list name='5' value='5'/>
+            <list name='6' value='6'/>
+            <list name='8' value='8'/>
+            <list name='10' value='10'/>
+            <list name='20' value='20'/>
+            <list name='30' value='30'/>
+            <list name='40' value='40'/>
+            <list name='50' value='50'/>
+            <list name='60' value='60'/>
+            <list name='80' value='80'/>
+            <list name='100' value='100'/>
+            <list name='200' value='200'/>
+            <list name='300' value='300'/>
+            <list name='500' value='500'/>
+            <list name='750' value='750'/>
+            <list name='1280' value='1280'/>
+            <list name='1920' value='1920'/>
+            <list name='2560' value='2560'/>
+        </para>
+        <para index="5" name="DRXRetransmissionTimer" description="DRX Retransmission Timer" type="list">
+            <list name='1' value='1'/>
+            <list name='2' value='2'/>
+            <list name='4' value='4'/>
+            <list name='6' value='6'/>
+            <list name='8' value='8'/>
+            <list name='16' value='16'/>
+            <list name='24' value='24'/>
+            <list name='33' value='33'/>
+        </para>
+        <para index="6" name="LongDRXCycle" description="Long DRX Cycle" type="list">
+            <list name='10' value='10'/>
+            <list name='20' value='20'/>
+            <list name='32' value='32'/>
+            <list name='40' value='40'/>
+            <list name='64' value='64'/>
+            <list name='80' value='80'/>
+            <list name='128' value='128'/>
+            <list name='160' value='160'/>
+            <list name='256' value='256'/>
+            <list name='320' value='320'/>
+            <list name='512' value='512'/>
+            <list name='640' value='640'/>
+            <list name='1024' value='1024'/>
+            <list name='1280' value='1280'/>
+            <list name='2048' value='2048'/>
+            <list name='2560' value='2560'/>
+        </para>
+        <para index="7" name="DRXStartOffset" description="DRX Start Offset" type="number">
+            <range min="0" max="2559"/>
+        </para>
+        <para index="8" name="ShortDRXCycle" description="Short DRX Cycle" type="list">
+            <list name='2' value='2'/>
+            <list name='5' value='5'/>
+            <list name='8' value='8'/>
+            <list name='10' value='10'/>
+            <list name='16' value='16'/>
+            <list name='20' value='20'/>
+            <list name='32' value='32'/>
+            <list name='40' value='40'/>
+            <list name='64' value='64'/>
+            <list name='80' value='80'/>
+            <list name='128' value='128'/>
+            <list name='160' value='160'/>
+            <list name='256' value='256'/>
+            <list name='320' value='320'/>
+            <list name='512' value='512'/>
+            <list name='640' value='640'/>
+        </para>
+        <para index="9" name="DRXShortCycleTimer" description="DRX Short Cycle Timer" type="number">
+            <range min="1" max="16"/>
+        </para>
+    </command>
+</macro>

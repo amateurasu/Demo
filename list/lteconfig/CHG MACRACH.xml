@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG MACRACH" macro_code="3000" macro_name="Change LTE RAN MAC MACRACH" command_group="7"
+            para_num="11" maindisplay="1 2 3 4 5 6 7 8 9 10 11" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="MaxHARQMsg3Tx" description="Max HARQ Msg 3Tx" type="number">
+            <range min="1" max="8"/>
+        </para>
+        <para index="3" name="MessagePowerOffsetGroupB" description="Message Power Offset GroupB" type="list">
+            <list name="-1" value="-1"/>
+            <list name="0" value="0"/>
+            <list name="5" value="5"/>
+            <list name="8" value="8"/>
+            <list name="10" value="10"/>
+            <list name="12" value="12"/>
+            <list name="15" value="15"/>
+            <list name="18" value="18"/>
+        </para>
+        <para index="4" name="PowerRampingStep" description="Power Ramping Step" type="list">
+            <list name="0" value="0"/>
+            <list name="2" value="2"/>
+            <list name="4" value="4"/>
+            <list name="6" value="6"/>
+        </para>
+        <para index="5" name="PreambleInitialReceivedTargetPower" description="Preamble Initial Received Target Power"
+                type="list">
+            <list name='-120' value='-120'/>
+            <list name='-118' value='-118'/>
+            <list name='-116' value='-116'/>
+            <list name='-114' value='-114'/>
+            <list name='-112' value='-112'/>
+            <list name='-110' value='-110'/>
+            <list name='-108' value='-108'/>
+            <list name='-106' value='-106'/>
+            <list name='-104' value='-104'/>
+            <list name='-102' value='-102'/>
+            <list name='-100' value='-100'/>
+            <list name='-98' value='-98'/>
+            <list name='-96' value='-96'/>
+            <list name='-94' value='-94'/>
+            <list name='-92' value='-92'/>
+            <list name='-90' value='-90'/>
+        </para>
+        <para index="6" name="PreambleTransMax" description="Preamble Trans Max" type="list">
+            <list name="3" value="3"/>
+            <list name="4" value="4"/>
+            <list name="5" value="5"/>
+            <list name="6" value="6"/>
+            <list name="7" value="7"/>
+            <list name="8" value="8"/>
+            <list name="10" value="10"/>
+            <list name="20" value="20"/>
+            <list name="50" value="50"/>
+            <list name="100" value="100"/>
+            <list name="200" value="200"/>
+        </para>
+        <para index="7" name="SizeOfRaGroupA" description="Size Of Rach GroupA" type="list">
+            <list name="4" value="4"/>
+            <list name="8" value="8"/>
+            <list name="12" value="12"/>
+            <list name="16" value="16"/>
+            <list name="20" value="20"/>
+            <list name="24" value="24"/>
+            <list name="28" value="28"/>
+            <list name="32" value="32"/>
+            <list name="36" value="36"/>
+            <list name="40" value="40"/>
+            <list name="44" value="44"/>
+            <list name="48" value="48"/>
+            <list name="52" value="52"/>
+            <list name="56" value="56"/>
+            <list name="60" value="60"/>
+            <list name="64" value="64"/>
+        </para>
+        <para index="8" name="MessageSizeGroupA" description="Message Size GroupA" type="list">
+            <list name="56" value="56"/>
+            <list name="144" value="144"/>
+            <list name="208" value="208"/>
+            <list name="256" value="256"/>
+        </para>
+        <para index="9" name="ContentionResolutionTimer" description="Contention Resolution Timer" type="list">
+            <list name="8" value="8"/>
+            <list name="16" value="16"/>
+            <list name="24" value="24"/>
+            <list name="32" value="32"/>
+            <list name="40" value="40"/>
+            <list name="48" value="48"/>
+            <list name="56" value="56"/>
+            <list name="64" value="64"/>
+        </para>
+        <para index="10" name="NumberOfRaPreambles" description="Number Of Rach Preambles" type="list">
+            <list name="4" value="4"/>
+            <list name="8" value="8"/>
+            <list name="12" value="12"/>
+            <list name="16" value="16"/>
+            <list name="20" value="20"/>
+            <list name="24" value="24"/>
+            <list name="28" value="28"/>
+            <list name="32" value="32"/>
+            <list name="36" value="36"/>
+            <list name="40" value="40"/>
+            <list name="44" value="44"/>
+            <list name="48" value="48"/>
+            <list name="52" value="52"/>
+            <list name="56" value="56"/>
+            <list name="60" value="60"/>
+            <list name="64" value="64"/>
+        </para>
+        <para index="11" name="ResponseWindowSize" description="Response Window Size" type="list">
+            <list name="2" value="2"/>
+            <list name="3" value="3"/>
+            <list name="4" value="4"/>
+            <list name="5" value="5"/>
+            <list name="6" value="6"/>
+            <list name="7" value="7"/>
+            <list name="8" value="8"/>
+            <list name="10" value="10"/>
+        </para>
+    </command>
+</macro>

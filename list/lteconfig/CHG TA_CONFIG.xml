@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG TA_CONFIG" macro_code="3001" macro_name="Change Timing Advance Config" command_group="7"
+            para_num="2" maindisplay="1 2" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="X_VENDOR_TIME_ALIGNMENT_TIMER_COMMON" description="X_VENDOR_TIME_ALIGNMENT_TIMER_COMMON"
+                type="number">
+            <range min="0" max="7"/>
+        </para>
+    </command>
+</macro>

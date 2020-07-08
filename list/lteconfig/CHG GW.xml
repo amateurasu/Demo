@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG GW" macro_code="3000" macro_name="Change LTE Gateway" command_group="7" para_num="2"
+            maindisplay="4 5 6 7" must_give="">
+        <para index="1" name="SecGWServer1" description="First Sec Gateway" type="text">
+        </para>
+        <para index="2" name="SecGWServer2" description="Second Sec Gateway" type="text">
+        </para>
+        <para index="3" name="SecGWServer3" description="Third Sec Gateway" type="text">
+        </para>
+        <para index="4" name="S1SigLinkServerList" description="S1 Signal Link Server List" type="text">
+        </para>
+        <para index="5" name="S1SigLinkPort" description="S1 Signal Link Port" type="number">
+            <range min='10000' max='65535'/>
+        </para>
+        <para index="6" name="S1ConnectionMode" description="S1 Connection Mode" type="list" multi-value="1">
+            <list name="One" value="One" description="0"/>
+            <list name="All" value="All" description="1"/>
+        </para>
+        <para index="7" name="X_VENDOR_NUMSTREAM" description="X_VENDOR_NUMSTREAM" type="text" minlength="1"
+                maxlength="20">
+        </para>
+    </command>
+</macro>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="CHG RANIDLECOMMON" macro_code="3000" macro_name="Change LTE RAN RANIDLECOMMON" command_group="7"
+            para_num="12" maindisplay="1 2 3 4 5 6 7 8 9 10 11 12 13" must_give="1">
+        <para index="1" name="cellId" parentAttr='1' description="Cell ID" type="list" multi-value="1">
+            <list name="0" value="0" description="0"/>
+            <list name="1" value="1" description="1"/>
+            <list name="2" value="2" description="2"/>
+        </para>
+        <para index="2" name="NCellChangeHigh" description="Number Cell Change High" type="number">
+            <range min="0" max="16"/>
+        </para>
+        <para index="3" name="NCellChangeMedium" description="Number Cell Change Medium" type="number">
+            <range min="0" max="16"/>
+        </para>
+        <para index="4" name="Qhyst" description="Qhyst" type="list">
+            <list name='0' value='0'/>
+            <list name='1' value='1'/>
+            <list name='2' value='2'/>
+            <list name='3' value='3'/>
+            <list name='4' value='4'/>
+            <list name='5' value='5'/>
+            <list name='6' value='6'/>
+            <list name='8' value='8'/>
+            <list name='10' value='10'/>
+            <list name='12' value='12'/>
+            <list name='14' value='14'/>
+            <list name='16' value='16'/>
+            <list name='18' value='18'/>
+            <list name='20' value='20'/>
+            <list name='22' value='22'/>
+            <list name='24' value='24'/>
+        </para>
+        <para index="5" name="QHystSFHigh" description="QHyst SF High" type="list">
+            <list name="-6" value="-6"/>
+            <list name="-4" value="-4"/>
+            <list name="-2" value="-2"/>
+            <list name="0" value="0"/>
+        </para>
+        <para index="6" name="QHystSFMedium" description="QHyst SF Medium" type="list">
+            <list name="-6" value="-6"/>
+            <list name="-4" value="-4"/>
+            <list name="-2" value="-2"/>
+            <list name="0" value="0"/>
+        </para>
+        <para index="7" name="TEvaluation" description="TEvaluation" type="list">
+            <list name="30" value="30"/>
+            <list name="60" value="60"/>
+            <list name="120" value="120"/>
+            <list name="180" value="180"/>
+            <list name="240" value="240"/>
+        </para>
+        <para index="8" name="THystNormal" description="THystNormal" type="list">
+            <list name="30" value="30"/>
+            <list name="60" value="60"/>
+            <list name="120" value="120"/>
+            <list name="180" value="180"/>
+            <list name="240" value="240"/>
+        </para>
+
+        <para index="9" name="X_VENDOR_Q_QUAL_MIN_R9" description="X_VENDOR_Q_QUAL_MIN_R9" type="number" newline='1'>
+            <range min="-34" max="-3"/>
+        </para>
+        <para index="10" name="X_VENDOR_Q_QUAL_MIN_OFFSET_R9_PRESENT"
+                description="X_VENDOR_Q_QUAL_MIN_OFFSET_R9_PRESENT" type="number" newline='1'>
+            <range min="1" max="8"/>
+        </para>
+        <para index="11" name="X_VENDOR_S_NON_INTRA_SEARCH_P_R9" description="X_VENDOR_S_NON_INTRA_SEARCH_P_R9"
+                type="number" newline='1'>
+            <range min="0" max="31"/>
+        </para>
+        <para index="12" name="X_VENDOR_S_NON_INTRA_SEARCH_Q_R9" description="X_VENDOR_S_NON_INTRA_SEARCH_Q_R9"
+                type="number" newline='1'>
+            <range min="0" max="31"/>
+        </para>
+
+        <para index="13" name="X_VENDOR_THRESH_SERVING_LOWQ_R9" description="X_VENDOR_THRESH_SERVING_LOWQ_R9"
+                type="number" newline='1'>
+            <range min="0" max="31"/>
+        </para>
+
+    </command>
+</macro>

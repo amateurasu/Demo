@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="RLB CFGSET" macro_code="3001" macro_name="Rollback Configuration Dataset" command_group="7"
+            para_num="0" maindisplay=""
+            must_give="">
+    </command>
+</macro>

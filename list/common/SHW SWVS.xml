@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macro>
+    <command name="SHW SWVS" macro_code="3001" macro_name="Show Software Version" command_group="7" para_num="3"
+            maindisplay=""
+            must_give="1">
+    </command>
+</macro>
